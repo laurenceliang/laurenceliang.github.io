@@ -31,7 +31,7 @@ body{
 #top{
 	min-height:100vh;
 	/*background-color: rgb(90,90,100);*/
-	background-image: url("laurence_portfolio.JPG");
+	background-image: url("https://raw.githubusercontent.com/laurenceliang/laurenceliang.github.io/master/laurence_portfolio.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
