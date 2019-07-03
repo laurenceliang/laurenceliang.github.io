@@ -62,16 +62,17 @@ body{
 
 #experience{
 	min-height: 100vh;
-	padding:5%;
+	padding-top: 10vh;
 }
 
 .experience_box{
 	/*min-width:400px;*/
-	margin:2%;
+	min-height: 200px;
+	padding: 5%;
 	text-align: center;
 	vertical-align: center
 	line-height: 90px; 
-	padding-top:10%;
+	padding-top:0;
 	/*background: rgb(0,0,0)*/
 }
 
@@ -81,8 +82,8 @@ body{
 	align-items: center;
 	justify-content: center;*/
 	position: relative;
-	margin-top: 20vh;
-	margin-left:20vh;
+	margin-top: 0;
+	margin-left:0;
 }
 
 #skills{
@@ -104,4 +105,12 @@ body{
 {
     font-family: HelveticaNeueLight;
     src: url(HelveticaNeueLight.ttf);
+}
+
+.pale_gold_background{
+	background-color: #DCD0C0;
+}
+
+.pale_white_background{
+	background-color: #f5eee4;
 }
