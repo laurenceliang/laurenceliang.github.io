@@ -3,9 +3,9 @@ html {
 }
 
 body{
-	background-color: white;
+	background-color: #F4F4F4;
 	font-family: HelveticaNeueLight;
-	font-size: 3vh;
+	font-size: 20px;
 	text-align: justify;
 	background-size: contain;
 
@@ -21,7 +21,7 @@ body{
 }
 
 .modal{
-	font-size: 1.9vh;
+	font-size: 20px;
 }
 
 /*.navbar-default {
@@ -47,7 +47,7 @@ body{
 	padding-top: 70vh;
 	padding-left: 5%;
 	padding-right: 5%;
-	font-size:10vh;
+	font-size:40px;
 	text-shadow: 0px 0px 80px black;
 	text-shadow: 0px 0px 80px black;
 	text-shadow: 0px 0px 80px black;
@@ -60,7 +60,27 @@ body{
 
 }
 
+#services{
+	/*min-height: 100vh;*/
+	background-color: #f5eee4;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+}
+
+.services_column{
+	left-padding: 10%;
+	right-padding: 10%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+.services_icon{
+	padding: 40px;
+}
+
 #experience{
+	background-color: white;d
 	min-height: 100vh;
 	padding-top: 10vh;
 }
@@ -92,6 +112,7 @@ body{
 }
 
 #contact{
+	background-color: white;
 	min-height: 90vh;
 	padding:5%;
 }
