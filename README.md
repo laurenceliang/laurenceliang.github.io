@@ -1,2 +1,1 @@
-# laurenceliang.github.io
-Landing Page
+#laurenceliang.github.io 
