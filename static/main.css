@@ -1,47 +1,52 @@
-html{
+html {
 	scroll-behavior: smooth;
 }
 
-#component-top{
-	min-height: calc(100vh - 60px);
-	background-image: url("https://images.unsplash.com/photo-1547944569-e62f69839c6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2158&q=80");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+body {
+	/* background-color: rgb(235, 235, 235); */
+	color: rgb(30, 30, 0);
+	font-family: 'Times New Roman', Times, serif;
 }
 
-#component-projects{
-	min-height: 20vh;
-	background-color: rgba(255,255,255,1.0);
+li {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-#component-experience{
-	min-height: 20vh;
-	background-color: rgba(255,255,255,1.0);
+
+.c-flex{
+	display: flex;
+	flex-wrap: wrap;
 }
 
-#component-news{
-	min-height: 20vh;
-	background-color: rgba(255,255,255,1.0);
+.c-col{
+	flex: 1;
 }
 
-#component-contact{
-	min-height: 20vh;
-	background-color: rgba(255,255,255,1.0);
+.c-col-nav{
+	min-width: 250px;
+	max-width: 300px;
+
+	padding-left: 3%;
+	padding-right: 3%;
+
+	text-align: right;
+	margin-bottom: 50px;
 }
 
-#navbar-main{
-	height: 60px;
+.c-col-content {
+	min-width: 250px;
+	max-width: 500px;
+
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
-.custom-component-top{
-	padding: 50px 30px 30px 30px;
+.c-block {
+	margin-bottom: 50px;
 }
 
-.custom-component-body{
-	padding: 50px 30px 30px 30px;
-}
-
-.card{
-	margin: 10px;
+.c-mainItem {
+	margin-bottom: 15px;
+	margin-top: 15px
 }
