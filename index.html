@@ -32,24 +32,36 @@
 
 			.c-col-nav{
 				min-width: 250px;
-				max-width: 300px;
+				/* max-width: 150px; */
 
 				padding-left: 3%;
 				padding-right: 3%;
 
-				text-align: right;
 				margin-bottom: 50px;
+				padding-top: 18px;
+
 			}
 
 			.c-col-content {
-				min-width: 250px;
+				min-width: 300px;
 				max-width: 500px;
 
 				padding-left: 3%;
 				padding-right: 3%;
+
 			}
 
 			.c-block {
+				padding-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			.c-block-first {
+				padding-top: 25px;
+			}
+
+			.c-block-last {
+				padding-top: 25px;
 				margin-bottom: 50px;
 			}
 
@@ -58,192 +70,230 @@
 				margin-top: 15px
 			}
 
+			@media (max-width: 654px) {
+				.c-col-nav {
+					text-align: center;
+				}
+				
+			}
+
+			@media (min-width: 655px) {
+
+				.c-col-nav {
+					position: fixed;
+					text-align: right;
+					right: calc(65vw);
+				}
+
+				.c-col-content {
+					position: absolute;
+					left: calc(35vw);
+				}
+
+
+
+				/* #c-mainContainer { */
+					/* padding-left: calc(0.2*(100vw - 600px)); */
+				/* } */
+
+			}
+
+
 		</style>
 
 		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/U%2B269B.svg/2000px-U%2B269B.svg.png">
 	</head>
 	<body>
-		<div class="c-flex">
-			<div id="id-mainNavbar" class="c-col c-col-nav">
-				<p><b>Laurence Liang</b></p>
-				<p><a href="#id-philosophy">My Philosophy</a></p>
-				<p><a href="#id-experience">Experience</a></p>
-				<p><a href="#id-projects">Projects</a></p>
-				<p><a href="#id-recognition">Recognition</a></p>
-				<p><a href="#id-education">Education</a></p>
-				<p><a href="#id-writing">Publications + Writing</a></p>
-				<p><a href="#id-contact">Contact</a></p>
+		<div id="c-mainContainer">
+			<div class="c-flex">
+				<div id="id-mainNavbar" class="c-col c-col-nav">
+					<p><b>Laurence Liang</b></p>
+					<p><a href="#id-philosophy">My Philosophy</a></p>
+					<p><a href="#id-experience">Experience</a></p>
+					<p><a href="#id-projects">Projects</a></p>
+					<p><a href="#id-recognition">Recognition</a></p>
+					<p><a href="#id-education">Education</a></p>
+					<p><a href="#id-writing">Publications + Writing</a></p>
+					<p><a href="#id-contact">Contact</a></p>
+				</div>
+				<div class="c-col c-col-content">
+					<div id="id-philosophy" class="c-block-first">
+						<p><b>My Philosophy</b></p>
+						<ul>
+							<li class="c-mainItem"><b>Hi! Thank you </b>for taking time to visit my webpage!</li>
+							<li class="c-mainItem"><b>I believe that we are all travellers in this world,</b>
+								<ul>
+									<li>and that we each explore this world to find our own meaning.</li>
+									<li>During my time in this world, I hope to build hardware and software that can benefit people around me.</li>
+									<li>Follow the Sun, follow the light.</li>
+									<li>A lot of my life philosophy was influenced by climbing mountains and staying at Buddhist temples in Japan.</li>
+								</ul>
+	
+							</li>
+	
+							<li class="c-mainItem">You might be wondering, <b>why the minimal website?</b> 
+								<ul>
+									<li>I hope to share my ideas and story in a direct an non-flashy manner. 
+										<ul>
+											<li>I can make flashy websites,</li>
+											<li>if you want one, please let me know!</li>
+										</ul>
+									</li>
+									<li>Inspired by <a target="_blank" href="https://nat.org">Nat Friedman</a></li>
+									<li>While I tried to make this website readable, I realize that I can always improve!</li>
+									<li>At the moment, I grouped my webpage in seven sections (accessible on the <a href="#id-mainNavbar">navbar</a>),</li>
+									<li>with bullet points describing things that I'm excited about.</li>
+	
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>For recruiters:</b><ul>
+								<li>My GitHub and socials can be found under <a href="#id-contact">Contact</a></li>
+							</ul></li>
+						</ul>
+					</div>
+					<div id="id-experience" class="c-block">
+						<p><b>Experience</b></p>
+						<ul>
+							<li class="c-mainItem"><b>Data Scientist</b> at <b>Perceive Now</b>
+								<ul>
+									<li>Deployed the first version of the core API (startup currently valued at $2.5M+ in pre-seed)</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Student Researcher</b> at <b>McGill University</b>
+								<ul>
+									<li>Developing live maps for food services, supervised by Prof. Aunio and Prof. Sengupta</li>
+									<li>Predicting brain surgery motion tracking, invited by Dr. del Maestro and Dr. Yilmaz</li>
+	
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Intern</b> at the <b>Autonomous Control Systems Laboratory, Ltd. </b> 
+								<ul>
+									<li>Wrote software for the R&D Unit (drones) in Tokyo, Japan</li>
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Backend Dev</b> at <b>Soulzone</b> 
+								<ul>
+									<li>Developed the API routes for the internal search engine</li>
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Apprentice</b> at <b>Expedia</b>
+								<ul>
+									<li>Built NLP tools for the Worldwide Engineering Team</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="id-projects" class="c-block">
+						<p><b>Projects</b></p>
+						<ul>
+							<li class="c-mainItem"><b>Inspire</b> (Founder)
+								<ul>
+									<li>(v1) An autonomous robotic arm (with 3D-printed parts) that can diagnose respiratory disease using automated machine learning</li>
+									<li>(v2) (Semi-stealth mode) 2x more accurate than physicians, 1,000x cheaper than spirometry tests, in less than 60 seconds</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Organizing Hackathons</b>
+								<ul>
+									<li>6 editions of hackathons which brought together 1,000+ high school and univeristy students 
+										<ul>
+											<li>McHacks 9, 10</li>
+											<li>MariHacks 2020, 2021</li>
+											<li>BrébeufHx 2018, 2019, 2020</li>
+										</ul>
+									</li>
+									<li>Leading a team that raised 5 figures in sponsorships</li>
+									<li>Worked with Expedia, CAE and Front Row Ventures</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>miRNA Treatments</b> for <b>COVID-19</b> 
+								<ul>
+									<li>Developed a pipeline based on miRDB to identify 169 miRNA candidates</li>
+									<li>that could potentially slow down the spread of COVID-19 through RNA interference</li>
+									<li>Presented at Regeneron ISEF and Sanofi Biogenius</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>AI-Based Predictions</b> for <b>Transcription Factors</b> (genes) that Stimulate <b>Spinal Cord Regeneration</b> 
+								<ul>
+									<li>Developed ADAGE, an ensemble model based on TRRUST v2 that predicts</li>
+									<li>transcription factors associated to specific cellular functions, including CNS neuron regeneration.</li>
+									<li>I'm incredibly grateful for the time and support of Prof. Patten from the INRS Armand-Frappier to experimentally test the model predictions in a laboratory setting.</li>
+									<li>Presented at the Canada-Wide Science Fair and Sanofi Biogenius.</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Handheld Exoskeleton</b> for <b>Surgery</b> (proof-of-concept) 
+								<ul>
+									<li>Developed the computer vision and controls components of a handheld exoskeleton,</li>
+									<li>which can be controlled by gesturing in front of a webcam</li>
+									<li>Built at HackMIT (2nd Place PRHI Challenge), and we're looking for industry and resarch opportunities to grow.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="id-recognition" class="c-block">
+						<p><b>Recognition</b></p>
+						<ul>
+							<li>Cansbridge Fellow</li>
+							<li>Microsoft Imagine Cup World Finalist (Top 48)</li>
+							<li>HackMIT PRHI 2nd Place</li>
+							<li>Mitacs Business Strategy Internship Grant Recipient</li>
+							<li>TEDx Speaker</li>
+							<li>Regeneron ISEF Grand Award Recipient</li>
+							<li>2x Canada-Wide Science Fair Bronze Medalist</li>
+							<li>1st Place Sanofi Biogenius in Québec (3rd in Canada)</li>
+							<li>3rd Place Hack Harvard</li>
+							<li>IRONMAN 70.3-distance Finisher at Triatlon Esprit (+/- 300 metres, due to race track)</li>
+						</ul>
+					</div>
+					<div id="id-education" class="c-block">
+						<p><b>Education</b></p>
+						<ul>
+							<li class="c-mainItem"><b>Engineering</b> at <b>McGill University</b> (in progress)
+								<ul>
+									<li>McHacks Organizer</li>
+									<li>Cansbridge Fellow</li>
+									<li>Taught two courses at <a target="_blank" href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html">MIT Splash</a></li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Honours Health Sciences</b> at <b>Marianopolis College</b>
+								<ul>
+									<li>Elected President of the Marianopolis Student Union</li>
+									<li>MariHacks Organizer</li>
+									<li>Grade 12 + university freshman year-equivalent courses</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Secondary School</b> at <b>Collège Jean-de-Brébeuf</b>
+								<ul>
+									<li>BrébeufHx Hackathon Organizer (co-founder)</li>
+									<li>Fencing Top 8 in Québec (2016, 2017)</li>
+									<li>Grades 7 to 11</li>
+								</ul>
+							</li>
+						</ul>				</div>
+					<div id="id-writing" class="c-block">
+						<p><b>Publications + Writing</b></p>
+						<ul>
+							<li>Working on research papers with folks at McGill Univeristy and the Université de Montréal <ul>
+								<li>Publication ETA mid-2023</li>
+							</ul></li>
+							<li>Always open for research opportunities</li>
+							<li>Sharing ideas on <a target="_blank" href="https://laurenceliang.substack.com/">Substack</a></li>
+						</ul>
+					</div>
+					<div id="id-contact" class="c-block-last">
+						<p><b>Contact</b></p>
+						<p>Hi! I'd love to connnect via laurence.liang [at] mail.mcgill.ca</p>
+						<p>I'm also active on</p>
+						<ul>
+							<li><a target="_blank" href="https://www.linkedin.com/in/laurence-liang-innovator/">LinkedIn</a></li>
+							<li><a target="_blank" href="https://github.com/TheFloatingString">GitHub</a></li>
+							<li><a target="_blank" href="https://twitter.com/LaurenceLiang1">Twitter</a></li>
+						</ul>
+						<p>Thank you for visiting, excited to get in touch!</p>
+					</div>
+				</div>
 			</div>
-			<div class="c-col c-col-content">
-				<div id="id-philosophy" class="c-block">
-					<p><b>My Philosophy</b></p>
-					<ul>
-						<li class="c-mainItem"><b>Hi! Thank you </b>for taking time to visit my webpage!</li>
-						<li class="c-mainItem"><b>I believe that we are all travellers in this world,</b>
-							<ul>
-								<li>and that we each explore this world to find our own meaning.</li>
-								<li>During my time in this world, I hope to build hardware and software that can benefit people around me.</li>
-								<li>Follow the Sun, follow the light.</li>
-								<li>A lot of my life philosophy was influenced by climbing mountains and staying at Buddhist temples in Japan.</li>
-							</ul>
-
-						</li>
-
-						<li class="c-mainItem">You might be wondering, <b>why the minimal website?</b> 
-							<ul>
-								<li>I hope to share my ideas and story in a direct an non-flashy manner. 
-									<ul>
-										<li>I can make flashy websites,</li>
-										<li>if you want one, please let me know!</li>
-									</ul>
-								</li>
-								<li>Inspired by <a target="_blank" href="https://nat.org">Nat Friedman</a></li>
-								<li>While I tried to make this website readable, I realize that I can always improve!</li>
-								<li>At the moment, I grouped my webpage in seven sections (accessible on the <a href="#id-mainNavbar">navbar</a>),</li>
-								<li>with bullet points describing things that I'm excited about.</li>
-
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>For recruiters:</b><ul>
-							<li>My GitHub and socials can be found under <a href="#id-contact">Contact</a></li>
-						</ul></li>
-					</ul>
-				</div>
-				<div id="id-experience" class="c-block">
-					<p><b>Experience</b></p>
-					<ul>
-						<li class="c-mainItem"><b>Data Scientist</b> at <b>Perceive Now</b>
-							<ul>
-								<li>Deployed the first version of the core API (startup currently valued at $2.5M+ in pre-seed)</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>Student Researcher</b> at <b>McGill University</b>
-							<ul>
-								<li>Developing live maps for food services, supervised by Prof. Aunio and Prof. Sengupta</li>
-								<li>(on pause) Predicting brain surgery motion tracking, invited by Dr. del Maestro and Dr. Yilmaz</li>
-
-							</ul>
-						</li>
-						<li class="c-mainItem">prev. <b>Intern</b> at the <b>Autonomous Control Systems Laboratory, Ltd. </b> 
-							<ul>
-								<li>Wrote software for the R&D Unit (drones) in Tokyo, Japan</li>
-							</ul>
-						</li>
-						<li class="c-mainItem">prev. <b>Backend Dev</b> at <b>Soulzone</b> 
-							<ul>
-								<li>Developed the API routes for the internal search engine</li>
-							</ul>
-						</li>
-						<li class="c-mainItem">prev. <b>Apprentice</b> at <b>Expedia</b>
-							<ul>
-								<li>Built NLP tools for the Worldwide Engineering Team</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div id="id-projects" class="c-block">
-					<p><b>Projects</b></p>
-					<ul>
-						<li class="c-mainItem"><b>Inspire</b> (Founder)
-							<ul>
-								<li>(v1) An autonomous robotic arm (with 3D-printed parts) that can diagnose respiratory disease using automated machine learning</li>
-								<li>(v2) (Semi-stealth mode) 2x more accurate than physicians, 1,000x cheaper than spirometry tests, in less than 60 seconds</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>Organizing Hackathons</b>
-							<ul>
-								<li>6 editions of hackathons which brought together 1,000+ high school and univeristy students</li>
-								<li>Leading a team that raised 5 figures in sponsorships</li>
-								<li>Worked with Expedia, CAE and Front Row Ventures</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>miRNA Treatments</b> for <b>COVID-19</b> 
-							<ul>
-								<li>Developed a pipeline based on miRDB to identify 169 miRNA candidates</li>
-								<li>that could potentially slow down the spread of COVID-19 through RNA interference</li>
-								<li>Presented at Regeneron ISEF and Sanofi Biogenius</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>AI-Based Predictions</b> for <b>Transcription Factors</b> (genes) that Stimulate <b>Spinal Cord Regeneration</b> 
-							<ul>
-								<li>Developed ADAGE, an ensemble model based on TRRUST v2 that predicts</li>
-								<li>transcription factors associated to specific cellular functions, including CNS neuron regeneration.</li>
-								<li>I'm incredibly grateful for the time and support of Prof. Patten from the INRS Armand-Frappier to experimentally test the model predictions in a laboratory setting.</li>
-								<li>Presented at the Canada-Wide Science Fair and Sanofi Biogenius.</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>Handheld Exoskeleton</b> for <b>Surgery</b> (proof-of-concept) 
-							<ul>
-								<li>Developed the computer vision and controls components of a handheld exoskeleton,</li>
-								<li>which can be controlled by gesturing in front of a webcam</li>
-								<li>Built at HackMIT (2nd Place PRHI Challenge), and we're looking for industry and resarch opportunities to grow.</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div id="id-recognition" class="c-block">
-					<p><b>Recognition</b></p>
-					<ul>
-						<li>Cansbridge Fellow</li>
-						<li>Microsoft Imagine Cup World Finalist (Top 48)</li>
-						<li>HackMIT PRHI 2nd Place</li>
-						<li>Mitacs Business Strategy Internship Grant Recipient</li>
-						<li>TEDx Speaker</li>
-						<li>Regeneron ISEF Grand Award Recipient</li>
-						<li>2x Canada-Wide Science Fair Bronze Medalist</li>
-						<li>1st Place Sanofi Biogenius in Québec (3rd in Canada)</li>
-						<li>3rd Place Hack Harvard</li>
-						<li>IRONMAN 70.3-distance Finisher at Triatlon Esprit (+/- 300 metres, due to race track)</li>
-					</ul>
-				</div>
-				<div id="id-education" class="c-block">
-					<p><b>Education</b></p>
-					<ul>
-						<li class="c-mainItem"><b>Engineering</b> at <b>McGill University</b> (in progress)
-							<ul>
-								<li>McHacks Organizer</li>
-								<li>Cansbridge Fellow</li>
-								<li>Taught two courses at <a target="_blank" href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html">MIT Splash</a></li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>Honours Health Sciences</b> at <b>Marianopolis College</b>
-							<ul>
-								<li>Elected President of the Marianopolis Student Union</li>
-								<li>MariHacks Organizer</li>
-								<li>Grade 12 + university freshman year-equivalent courses</li>
-							</ul>
-						</li>
-						<li class="c-mainItem"><b>Secondary School</b> at <b>Collège Jean-de-Brébeuf</b>
-							<ul>
-								<li>BrébeufHx Hackathon Organizer (co-founder)</li>
-								<li>Fencing Top 8 in Québec (2016, 2017)</li>
-								<li>Grades 7 to 11</li>
-							</ul>
-						</li>
-					</ul>				</div>
-				<div id="id-writing" class="c-block">
-					<p><b>Publications + Writing</b></p>
-					<ul>
-						<li>Working on research papers with folks at McGill Univeristy and the Université de Montréal <ul>
-							<li>Publication ETA mid-2023</li>
-						</ul></li>
-						<li>Always open for research opportunities</li>
-						<li>Sharing ideas on <a target="_blank" href="https://laurenceliang.substack.com/">Substack</a></li>
-					</ul>
-				</div>
-				<div id="id-contact" class="c-block">
-					<p><b>Contact</b></p>
-					<p>Hi! I'll try my best to reply via laurence.liang [at] mail.mcgill.ca</p>
-					<p>I'm also active on</p>
-					<ul>
-						<li><a target="_blank" href="https://www.linkedin.com/in/laurence-liang-innovator/">LinkedIn</a></li>
-						<li><a target="_blank" href="https://github.com/TheFloatingString">GitHub</a></li>
-						<li><a target="_blank" href="https://twitter.com/LaurenceLiang1">Twitter</a></li>
-					</ul>
-					<p>Thank you for visiting, excited to get in touch!</p>
-				</div>
-			</div>
+	
 		</div>
-
+		
 	</body>
 </html>
