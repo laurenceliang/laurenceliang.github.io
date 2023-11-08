@@ -13,16 +13,27 @@
 
 			body {
 				/* background-color: rgb(235, 235, 235); */
-				color: rgb(30, 30, 0);
+				color: rgb(3, 3, 15);
 				/* font-family: 'Times New Roman', Times, serif; */
-				font-family: "Georgia";
+				font-family: "Inter";
 			}
 
 			li {
 				margin-top: 5px;
-				margin-bottom: 5px;
+				margin-bottom: 10px;
 			}
 
+			a {
+				color: rgb(3, 3, 15);
+			}
+
+			a:hover {
+				color: rgb(91, 92, 190);
+			}
+
+			#id-contact {
+				margin-bottom: 1000px;
+			}
 
 			.c-flex{
 				display: flex;
@@ -73,6 +84,15 @@
 				margin-top: 15px
 			}
 
+			.c-writings-list {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.c-no-underline {
+				text-decoration: none;
+			}
+
 			@media (max-width: 654px) {
 				.c-col-nav {
 					text-align: center;
@@ -83,6 +103,7 @@
 				}
 				
 			}
+
 
 			@media (min-width: 655px) {
 
@@ -108,8 +129,8 @@
 		<div id="c-mainContainer">
 			<div class="c-flex">
 				<div id="id-mainNavbar" class="c-col c-col-nav">
-					<p><b>Laurence Liang</b></p>
-					<p><a href="#id-philosophy">My Philosophy</a></p>
+					<a class="c-no-underline" href="#id-about"><p><b>Laurence Liang</b></p></a>
+					<!--<p><a href="#id-philosophy">My Philosophy</a></p>-->
 					<p><a href="#id-experience">Experience</a></p>
 					<p><a href="#id-projects">Projects</a></p>
 					<p><a href="#id-recognition">Recognition</a></p>
@@ -118,44 +139,31 @@
 					<p><a href="#id-contact">Contact</a></p>
 				</div>
 				<div class="c-col c-col-content">
-					<div id="id-philosophy" class="c-block-first">
-						<p><b>My Philosophy</b></p>
-						<ul>
-							<li class="c-mainItem"><b>Hi! Thank you </b>for taking time to visit my webpage!</li>
-							<li class="c-mainItem"><b>I believe that we are all travellers in this world,</b>
-								<ul>
-									<li>and that we each explore this world to find our own meaning.</li>
-									<li>During my time in this world, I hope to build hardware and software that can benefit people around me.</li>
-									<li>Follow the Sun, follow the light.</li>
-									<li>A lot of my life philosophy was influenced by climbing mountains and staying at Buddhist temples in Japan.</li>
-								</ul>
-	
-							</li>
-	
-							<li class="c-mainItem">You might be wondering, <b>why the minimal website?</b> 
-								<ul>
-									<li>I hope to share my ideas and story in a direct an non-flashy manner. 
-										<ul>
-											<li>I can make flashy websites,</li>
-											<li>if you want one, please let me know!</li>
-										</ul>
-									</li>
-									<li>Inspired by <a target="_blank" href="https://nat.org">Nat Friedman</a></li>
-									<li>While I tried to make this website readable, I realize that I can always improve!</li>
-									<li>At the moment, I grouped my webpage in seven sections (accessible on the <span id="id-showLeftTerm">left</span> <a href="#id-mainNavbar">navbar</a>),</li>
-									<li>with bullet points describing things that I'm excited about.</li>
-	
-								</ul>
-							</li>
-							<li class="c-mainItem"><b>For recruiters:</b><ul>
-								<li>My GitHub and socials can be found under <a href="#id-contact">Contact</a></li>
-							</ul></li>
-						</ul>
+
+					<br/>
+					<div id="id-about">
+						<h3>Hi! I'm Laurence,</h3>
+						<p>I'm an engineering student at McGill University,</p>
+						<p>and the founder of <a target="_blank" href="https://www.meetinspire.dev">Inspire</a> (NEXT AI '23), an early stage startup that aims to build low-cost robots for patient monitoring in isolated regions.</p>
+						<br/>
+						<!-- <p>I work part-time as a data scientist at Perceive Now, where I built version one of the core API and led product to build a functional search platform. </p>
+						<p>My past work includes interning on the R&D group at ACSL Ltd, co-authoring the AGORA architecture for safe speech-to-text transcription (1st place at Project X), and </p> -->
+						<p>Growing up as a self-taught programmer at 14 years old in Canada, I spent my high school years organizing hackathons,</p>
+						<p>and building ML models for bioinformatics which I presented at science fairs at the national level.</p>
+						<br/>
+						<p>My recent work includes developing motor performance ML models and visualization tools at the R&D team at ACSL Ltd (Japan's largest industrial drone manufacturer),</p>
+						<p>leading product and developing version one of the core API at Perceive Now as a data scientist, </p>
+						<p>and co-authoring the AGORA architecture for safe speech-to-text transcription (1st place paper at Project X, hosted by UofT AI).</p>
+						<br/>
+						<p><b>I'm actively looking for research oppotunities</b> related to robotics (kinematics, control systems and sensor fusion) and machine learning (3D-space mapping, dynamic speedup optimizations and generalizable models for applied sciences) for <b>Winter and Summer 2024</b>. <br/>
+						<p>I would love to share my past work and current ideas over a call, and I'm excited to <a href="#id-contact">connect</a>!</p>
 					</div>
+
+					<!--<div id="id-philosophy" class="c-block-first"></div>-->
 					<div id="id-experience" class="c-block">
-						<p><b>Experience</b></p>
+						<h3>Experience</h3>
 						<ul>
-							<li class="c-mainItem"><b>Data Scientist</b> at <b>Perceive Now</b>
+							<li class="c-mainItem"><b>Data Scientist</b> at <b>Perceive Now</b> 
 								<ul>
 									<li>Deployed the first version of the core API (startup currently valued at $2.5M+ in pre-seed)</li>
 								</ul>
@@ -167,9 +175,9 @@
 	
 								</ul>
 							</li>
-							<li class="c-mainItem">prev. <b>Intern</b> at the <b>Autonomous Control Systems Laboratory, Ltd. </b> 
+							<li class="c-mainItem">prev. <b>Drone R&D Intern</b> at the <b>Autonomous Control Systems Laboratory, Ltd. </b> 
 								<ul>
-									<li>Wrote software for the R&D Unit (drones) in Tokyo, Japan</li>
+									<li>Wrote software for the R&D group at Japan's largest industrial drone manufacturer in Tokyo</li>
 								</ul>
 							</li>
 							<li class="c-mainItem">prev. <b>Backend Dev</b> at <b>Soulzone</b> 
@@ -177,7 +185,7 @@
 									<li>Developed the API routes for the internal search engine</li>
 								</ul>
 							</li>
-							<li class="c-mainItem">prev. <b>Apprentice</b> at <b>Expedia</b>
+							<li class="c-mainItem">prev. <b>Software Dev (Apprentice Program)</b> at <b>Expedia</b>
 								<ul>
 									<li>Built NLP tools for the Worldwide Engineering Team</li>
 								</ul>
@@ -185,7 +193,7 @@
 						</ul>
 					</div>
 					<div id="id-projects" class="c-block">
-						<p><b>Projects</b></p>
+						<h3>Projects</h3>
 						<ul>
 							<li class="c-mainItem"><b>Inspire</b> (Founder, backed by NEXT AI '23)
 								<ul>
@@ -232,7 +240,7 @@
 						</ul>
 					</div>
 					<div id="id-recognition" class="c-block">
-						<p><b>Recognition</b></p>
+						<h3>Recognition</h3>
 						<ul>
 							<li>Cansbridge Fellow</li>
 							<li>2x Microsoft Imagine Cup World Finalist (Top 48)</li>
@@ -249,7 +257,7 @@
 						</ul>
 					</div>
 					<div id="id-education" class="c-block">
-						<p><b>Education</b></p>
+						<h3>Education</h3>
 						<ul>
 							<li class="c-mainItem"><b>Engineering</b> at <b>McGill University</b> (in progress)
 								<ul>
@@ -276,18 +284,35 @@
 							</li>
 						</ul>				</div>
 					<div id="id-writing" class="c-block">
-						<p><b>Publications + Writing</b></p>
+
+						<h3>Publications + Writing</h3>
+						
 						<ul>
-							<li>Working on research papers with folks at McGill University and the Université de Montréal <ul>
-								<li>Publication ETA mid-2023</li>
-							</ul></li>
-							<li>Always open for research opportunities</li>
-							<li>Sharing ideas on <a target="_blank" href="https://laurenceliang.substack.com/">Substack</a></li>
+							<li><b>Publications and Poster Presentations</b></li>
+							<ol class="c-writings-list">
+								<li><b>L. Liang</b>, V. Pak, N. Irshaid, and Z. Yang, ‘Improving Classification Accuracy using Contrastive Principal Component Analysis’, European Conference on Information Retrieval (ECIR 24). (Submitted, in review)</li>
+								<li>M. Joly-Chevrier, A. X.-L. Nguyen, <b>L. Liang</b>, M. Lesko-Krleza, and P. Lefrançois, ‘The State of Artificial Intelligence in Skin Cancer Publications’, Journal of Cutaneous Medicine and Surgery. (Submitted, in review)</li>
+								<li>V. Cruz and <b>L. Liang</b>, ‘AGORA: a Language Model for Safe Speech-to-Text Conversion’, Canadian Undergraduate Conference on Artificial Intelligence (CUCAI), 2023. (Awarded top 6 overall paper at CUCAI 23.)</li>
+								<li><b>L. Liang</b>, ‘Computer-Based miRNA Predictions to Inhibit SARS-Cov-2 Replication’, Regeneron ISEF, 2021. (Awarded 4th place in computational biology).</li>
+								<li><b>L. Liang</b>, ‘Using a Computer Model to Assist Neuron Regeneration’, Canada-Wide Science Fair (CWSF), 2019. (Awarded a bronze medal in the senior category).</li>
+								<li><b>L. Liang</b>, ‘Using AI to Understand Neuronal Behaviour;, Canada-Wide Science Fair (CWSF), 2018. (Awarded a bronze medal in the intermediate category).</li>
+							</ol>
+							<li><b>Speaking Opportunities</b></li>
+							<ol class="c-writings-list">
+								<li><b>L. Liang</b>, ‘Bioinformatics, Molecular Solutions, Intelligent Machines, and the Future of Medical Care,’ Big Data and AI Toronto (BDAIT 23), 2023. (<a href="https://www.bigdata-toronto.com/the-speakers/64b015fa5cd87c003bed6e11" target="_blank">link</a>)</li>
+								<li><b>L. Liang</b>, ‘Controlling a Robotic Arm using Computer Vision’, MIT Splash, 2022. (<a href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html" target="_blank">link</a>) (E15416 course taught at MIT Splash)</li>
+								<li><b>L. Liang</b>, ‘Identifying Cancer Cells Using Genetic Analysis and Computer Vision’, MIT Splash, 2022. (<a href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html" target="_blank">link</a>) (S15418 course taught at MIT Splash)</li>
+								<li><b>L. Liang</b>, ‘Curing Disease from our Living Rooms: a Vision for Bioinformatics,’ TEDx McGill, 2021. (<a href="https://www.youtube.com/watch?v=dymNjbB6q4E&t=3s" target="_blank">link</a>)</li>
+							</ol>
+							<li><b>Blog</b></li>
+							<ul>
+								<li>I share updates <a target="_blank" href="https://laurenceliang.substack.com/">Substack</a>!</li>
+							</ul>
 						</ul>
 					</div>
 					<div id="id-contact" class="c-block-last">
-						<p><b>Contact</b></p>
-						<p>I'd love to connnect via laurence.liang [at] mail.mcgill.ca</p>
+						<h3>Contact</h3>
+						<p>I'd love to connnect via <a target="_blank" href="mailto:laurence.liang@mail.mcgill.ca">laurence.liang [at] mail.mcgill.ca</a></p>
 						<p>I'm also active on</p>
 						<ul>
 							<li><a target="_blank" href="https://www.linkedin.com/in/laurence-liang-innovator/">LinkedIn</a></li>
