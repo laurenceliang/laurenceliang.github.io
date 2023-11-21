@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>			
+		<title>Laurence Liang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+
+		<style type="text/css">
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				/* background-color: rgb(235, 235, 235); */
+				color: rgb(3, 3, 15);
+				/* font-family: 'Times New Roman', Times, serif; */
+				font-family: "Inter";
+			}
+
+			li {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+
+			a {
+				color: rgb(3, 3, 15);
+			}
+
+			a:hover {
+				color: rgb(91, 92, 190);
+			}
+
+			#id-contact {
+				margin-bottom: 1000px;
+			}
+
+			.c-flex{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.c-col{
+				flex: 1;
+			}
+
+			.c-col-nav{
+				min-width: 250px;
+				/* max-width: 150px; */
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+				margin-bottom: 50px;
+				padding-top: 18px;
+
+			}
+
+			.c-col-content {
+				min-width: 300px;
+				max-width: 500px;
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+                padding-bottom: 500px;
+
+			}
+
+			.c-block {
+				padding-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			.c-block-first {
+				padding-top: 25px;
+			}
+
+			.c-block-last {
+				padding-top: 25px;
+				margin-bottom: 50px;
+			}
+
+			.c-mainItem {
+				margin-bottom: 15px;
+				margin-top: 15px
+			}
+
+			.c-writings-list {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.c-no-underline {
+				text-decoration: none;
+			}
+
+			@media (max-width: 654px) {
+				.c-col-nav {
+					text-align: center;
+				}
+
+				#id-showLeftTerm{
+					display: none;	
+				}
+				
+			}
+
+
+			@media (min-width: 655px) {
+
+				.c-col-nav {
+					position: fixed;
+					text-align: right;
+					right: calc(65vw);
+				}
+
+				.c-col-content {
+					position: absolute;
+					left: calc(35vw);
+				}
+
+			}
+
+
+		</style>
+
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/U%2B269B.svg/2000px-U%2B269B.svg.png">
+	</head>
+	<body>
+		<div id="c-mainContainer">
+			<div class="c-flex">
+				<div id="id-mainNavbar" class="c-col c-col-nav">
+					<a class="c-no-underline" href="writing/index.html"><p><b>Laurence's Writings</b></p></a>
+				</div>
+				<div class="c-col c-col-content">
+
+                    <ul>
+                        <li><a href="writing/self_reliance.html">On Money, Self-Reliance and Purpose</a></li>
+                        <li><a href="writing/computer_lab_reflection.html">Taking an Honest Look at Myself, underneath the Bright Lights of the Engineering Computer Lab.</a></li>
+                    </ul>
+
+                </div>
+            </div>	
+		</div>
+		
+	</body>
+</html>
+
