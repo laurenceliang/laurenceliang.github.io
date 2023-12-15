@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>			
+		<title>Laurence Liang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+
+		<style type="text/css">
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				/* background-color: rgb(235, 235, 235); */
+				color: rgb(3, 3, 15);
+				/* font-family: 'Times New Roman', Times, serif; */
+				font-family: "Inter"
+			}
+
+			li {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+
+			a {
+				color: rgb(3, 3, 15);
+			}
+
+			a:hover {
+				color: rgb(91, 92, 190);
+			}
+
+			#id-contact {
+				margin-bottom: 1000px;
+			}
+
+			.c-flex{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.c-col{
+				flex: 1;
+			}
+
+			.c-col-nav{
+				min-width: 250px;
+				/* max-width: 150px; */
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+				margin-bottom: 50px;
+				padding-top: 18px;
+
+			}
+
+			.c-col-content {
+				min-width: 300px;
+				max-width: 500px;
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+                padding-bottom: 500px;
+
+			}
+
+			.c-block {
+				padding-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			.c-block-first {
+				padding-top: 25px;
+			}
+
+			.c-block-last {
+				padding-top: 25px;
+				margin-bottom: 50px;
+			}
+
+			.c-mainItem {
+				margin-bottom: 15px;
+				margin-top: 15px
+			}
+
+			.c-writings-list {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.c-no-underline {
+				text-decoration: none;
+			}
+
+			@media (max-width: 654px) {
+				.c-col-nav {
+					text-align: center;
+				}
+
+				#id-showLeftTerm{
+					display: none;	
+				}
+				
+			}
+
+
+			@media (min-width: 655px) {
+
+				.c-col-nav {
+					position: fixed;
+					text-align: right;
+					right: calc(65vw);
+				}
+
+				.c-col-content {
+					position: absolute;
+					left: calc(35vw);
+				}
+
+			}
+
+
+		</style>
+
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/U%2B269B.svg/2000px-U%2B269B.svg.png">
+	</head>
+	<body>
+		<div id="c-mainContainer">
+			<div class="c-flex">
+				<div id="id-mainNavbar" class="c-col c-col-nav">
+					<a class="c-no-underline" href="/writing/index.html"><p><b>Laurence's Writings</b></p></a>
+				</div>
+				<div class="c-col c-col-content">
+
+
+                    <h1>A Heuristic on Versioning for Documents</h1>
+
+                    <p>August 2023.</p>
+                    <br/>
+                    <br/>
+
+                    <p><strong>Proposal for versioning for documents:</strong></p>
+                    <p><strong>Consider your initial document.</strong></p>
+                    <ul>
+                    <li>I.e. "A List of Conditions where LSTM Models Are Guaranteed to Converge to Local Minima"</li>
+                    </ul>
+                    <p><strong>Versioning could follow these rules:</strong></p>
+                    <ul>
+                    <li>If you decide to open a new document, and start a new article, then it is a major version change (i.e. v1.0 -&gt; v2.0)</li>
+                    <li>If you rewrite parts of the document that change the general summary of the document, then it is a major version change (v1.0 -&gt; 2.0)</li>
+                    <li>If you add additional context or limited additional information, it is a minor version change (i.e. v1.0 -&gt; v1.1)</li>
+                    <li>If you fix typos, it is a hotfix version change (i.e. v1.0.0. -&gt; v1.0.1)</li>
+                    </ul>
+                    <p><strong>Limitations of this approach</strong></p>
+                    <ul>
+                    <li>How do you differentiate major vs minor version changes, when you:<ul>
+                    <li>Add a lot of additional information (i.e. 20 pages) that does not change the general summary of the document?</li>
+                    <li>Regularly rewrite entire paragraphs, while keeping the same general summary of the document?</li>
+                    </ul>
+                    </li>
+                    </ul>
+                    ne interpretation is that with (i) the fear of overwriting memories and (ii) the utility of learning both resolved, this should reignite a conscious desire to learn for the joy of following one's curiosities and passions.</p>
+                    <p><b>Last Revision: December 2023.</b> Please note that this essay is still experimental, and that I have yet to implement this method for versioning in my work, and to figure out whether this versioning system works in practice.</p>
+                
+                </div>
+            </div>	
+		</div>
+		
+	</body>
+</html>
+
+
+
