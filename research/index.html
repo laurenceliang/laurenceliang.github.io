@@ -1,1 +1,344 @@
-Hello world
+<!DOCTYPE html>
+<html>
+	<head>			
+		<title>Laurence Liang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+
+		<style type="text/css">
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				/* background-color: rgb(235, 235, 235); */
+				color: rgb(3, 3, 15);
+				/* font-family: 'Times New Roman', Times, serif; */
+				font-family: "Inter";
+			}
+
+			li {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+
+			a {
+				color: rgb(3, 3, 15);
+			}
+
+			a:hover {
+				color: rgb(91, 92, 190);
+			}
+
+			#id-contact {
+				margin-bottom: 1000px;
+			}
+
+			.c-flex{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.c-col{
+				flex: 1;
+			}
+
+			.c-col-nav{
+				min-width: 250px;
+				/* max-width: 150px; */
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+				margin-bottom: 50px;
+				padding-top: 18px;
+
+			}
+
+			.c-col-content {
+				min-width: 300px;
+				max-width: 500px;
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+			}
+
+			.c-block {
+				padding-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			.c-block-first {
+				padding-top: 25px;
+			}
+
+			.c-block-last {
+				padding-top: 25px;
+				margin-bottom: 50px;
+			}
+
+			.c-mainItem {
+				margin-bottom: 15px;
+				margin-top: 15px
+			}
+
+			.c-writings-list {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.c-no-underline {
+				text-decoration: none;
+			}
+
+			@media (max-width: 654px) {
+				.c-col-nav {
+					text-align: center;
+				}
+
+				#id-showLeftTerm{
+					display: none;	
+				}
+				
+			}
+
+
+			@media (min-width: 655px) {
+
+				.c-col-nav {
+					position: fixed;
+					text-align: right;
+					right: calc(65vw);
+				}
+
+				.c-col-content {
+					position: absolute;
+					left: calc(35vw);
+				}
+
+			}
+
+
+		</style>
+
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/U%2B269B.svg/2000px-U%2B269B.svg.png">
+	</head>
+	<body>
+		<div id="c-mainContainer">
+			<div class="c-flex">
+				<div id="id-mainNavbar" class="c-col c-col-nav">
+					<a class="c-no-underline" href="#id-about"><p><b>Laurence Liang</b></p></a>
+					<!--<p><a href="#id-philosophy">My Philosophy</a></p>-->
+					<p><a href="#id-experience">Experience</a></p>
+					<p><a href="#id-projects">Projects</a></p>
+					<p><a href="#id-recognition">Recognition</a></p>
+					<p><a href="#id-education">Education</a></p>
+					<p><a href="#id-writing">Publications + Writing</a></p>
+					<p><a href="#id-contact">Contact</a></p>
+				</div>
+				<div class="c-col c-col-content">
+
+					<br/>
+					<div id="id-about">
+						<h3>Hi! I'm Laurence,</h3>
+						<p>I'm an engineering student at McGill University,</p>
+						<p>and the founder of <a target="_blank" href="https://www.meetinspire.dev">Inspire</a> (NEXT AI '23), an early stage startup that aims to build low-cost robots for patient monitoring in isolated regions.</p>
+						<br/>
+						<!-- <p>I work part-time as a data scientist at Perceive Now, where I built version one of the core API and led product to build a functional search platform. </p>
+						<p>My past work includes interning on the R&D group at ACSL Ltd, co-authoring the AGORA architecture for safe speech-to-text transcription (1st place at Project X), and </p> -->
+						<p>Growing up as a self-taught programmer at 14 years old in Canada, I spent my high school years organizing hackathons,</p>
+						<p>and building ML models for bioinformatics which I presented at science fairs at the national level.</p>
+						<br/>
+						<p>My recent work includes developing motor performance ML models and visualization tools at the R&D team at ACSL Ltd (Japan's largest industrial drone manufacturer),</p>
+						<p>leading product and developing version one of the core API at Perceive Now as a data scientist, </p>
+						<p>and co-authoring the <a href="https://github.com/TheFloatingString/AGORA">AGORA architecture</a> for safe speech-to-text transcription, and the <a href="https://arxiv.org/abs/2401.17574">Scavennging Hyena paper</a> for state space model distillation (both awarded 1st place paper at Project X, hosted by UofT AI, two years in a row).</p>
+						<br/>
+						<p><b>I'm actively looking for research oppotunities related to robotics and machine learning for Summer and Fall 2024.</b> My interests include:
+							<ul>
+								<li>Sensor fusion</li>
+								<li>3D-space mapping</li>
+								<li>Dynamic speedup optimizations</li>
+								<li>Generalizable ML models for applied science</li>
+								<li>Control systems</li>
+								<li>Nature-inspired kinematics</li>
+							</ul>
+						</p>
+						<p>I would love to share my past work and current ideas over a call, and I'm excited to <a href="#id-contact">connect</a>!</p>
+					</div>
+
+					<!--<div id="id-philosophy" class="c-block-first"></div>-->
+					<div id="id-experience" class="c-block">
+						<h3>Experience</h3>
+						<ul>
+							<li class="c-mainItem"><b>Student Researcher</b> at <b>McGill University and MILA</b>
+								<ul>
+									<li>Evaluating distillation for state space models, advised by Professor Irina Rish's group (MILA)</li>
+									<li>Research Lead at the MAIS Kernel for non-English misinformation detection, advised by Kellin Pelrine (Professor Rabbany's group (MILA))</li>
+									<!-- <li>Developing live maps for food services, supervised by Prof. Aunio and Prof. Sengupta</li> -->
+									<!-- <li>Predicting brain surgery motion tracking, invited by Dr. del Maestro and Dr. Yilmaz</li> -->
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Data Scientist</b> at <b>Perceive Now</b> 
+								<ul>
+									<li>Deployed the first version of the core API (startup currently valued at $2.5M+ in pre-seed)</li>
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Drone R&D Intern</b> at the <b>Autonomous Control Systems Laboratory, Ltd. </b> 
+								<ul>
+									<li>Wrote software for the R&D group at Japan's largest industrial drone manufacturer in Tokyo</li>
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Backend Dev</b> at <b>Soulzone</b> 
+								<ul>
+									<li>Developed the API routes for the internal search engine</li>
+								</ul>
+							</li>
+							<li class="c-mainItem">prev. <b>Software Dev (Apprentice Program)</b> at <b>Expedia</b>
+								<ul>
+									<li>Built NLP tools for the Worldwide Engineering Team</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="id-projects" class="c-block">
+						<h3>Projects</h3>
+						<ul>
+							<li class="c-mainItem"><b>Inspire</b> (Founder, backed by NEXT AI '23)
+								<ul>
+									<li>(v1) An autonomous robotic arm (with 3D-printed parts) that can diagnose respiratory disease using automated machine learning</li>
+									<li>(v2) (Semi-stealth mode) Low-cost robots for general-purpose patient monitoring in developing and isolated communities</li>
+									<li>(July 2023) We are searching for <b>early stage funding</b> and <b>opportunities to grow our core team</b>. Please feel free <a target="_blank" href="https://www.linkedin.com/in/laurence-liang-innovator/">to connect</a> or recommend someone who may be interested, we'd be super grateful!</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Organizing Hackathons</b>
+								<ul>
+									<li>7 editions of hackathons which brought together 1,000+ high school and univeristy student participants since 2018
+										<ul>
+											<li>McHacks 9, 10</li>
+											<li>MariHacks 2020, 2021</li>
+											<li>BrébeufHx 2018, 2019, 2020</li>
+										</ul>
+									</li>
+									<li>Leading a team that raised 5 figures in sponsorships</li>
+									<li>Worked with Expedia, CAE and Front Row Ventures</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>miRNA Treatments</b> for <b>COVID-19</b> 
+								<ul>
+									<li>Developed a pipeline based on miRDB to identify 169 miRNA candidates</li>
+									<li>that could potentially slow down the spread of COVID-19 through RNA interference</li>
+									<li>Presented at Regeneron ISEF and Sanofi Biogenius</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>AI-Based Predictions</b> for <b>Transcription Factors</b> (genes) that Stimulate <b>Spinal Cord Regeneration</b> 
+								<ul>
+									<li>Developed ADAGE, an ensemble model based on TRRUST v2 that predicts</li>
+									<li>transcription factors associated to specific cellular functions, including CNS neuron regeneration.</li>
+									<li>I'm incredibly grateful for the time and support of Prof. Patten from the INRS Armand-Frappier to experimentally test the model predictions in a laboratory setting.</li>
+									<li>Presented at the Canada-Wide Science Fair and Sanofi Biogenius.</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Handheld Exoskeleton</b> for <b>Surgery</b> (proof-of-concept) 
+								<ul>
+									<li>Developed the computer vision and controls components of a handheld exoskeleton,</li>
+									<li>which can be controlled by gesturing in front of a webcam</li>
+									<li>Built at HackMIT (2nd Place PRHI Challenge), and we're looking for industry and resarch opportunities to grow.</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="id-recognition" class="c-block">
+						<h3>Recognition</h3>
+						<ul>
+							<li>Cansbridge Fellow</li>
+							<li>2x Microsoft Imagine Cup World Finalist (Top 48)</li>
+							<li>HackMIT PRHI 2nd Place</li>
+							<li>Mitacs Business Strategy Internship Grant Recipient</li>
+							<li>TEDx Speaker</li>
+							<li>Regeneron ISEF Grand Award Recipient</li>
+							<li>2x Canada-Wide Science Fair Bronze Medalist</li>
+							<li>1st Place Sanofi Biogenius in Québec (3rd in Canada)</li>
+							<li>3rd Place Hack Harvard</li>
+							<li>1st Place Project X (Co-author, Human-to-Human Category)</li>
+							<li>NEXT AI Cohort '23</li>
+							<li>IRONMAN 70.3-distance Finisher at Triatlon Esprit (+/- 300 metres, due to race track)</li>
+						</ul>
+					</div>
+					<div id="id-education" class="c-block">
+						<h3>Education</h3>
+						<ul>
+							<li class="c-mainItem"><b>Engineering</b> at <b>McGill University</b> (in progress)
+								<ul>
+									<li>McHacks Organizer</li>
+									<li>Cansbridge Fellow</li>
+									<li>RippleX Fellow</li>
+									<li>Founded a robotics startup during my freshman year, currently backed by <b>NEXT AI '23</b></li>
+									<li>Taught two courses at <b><a target="_blank" href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html">MIT Splash</a></b></li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Honours Health Sciences</b> at <b>Marianopolis College</b>
+								<ul>
+									<li>Elected President of the Marianopolis Student Union</li>
+									<li>MariHacks Organizer</li>
+									<li>Grade 12 + university freshman year-equivalent courses</li>
+								</ul>
+							</li>
+							<li class="c-mainItem"><b>Secondary School</b> at <b>Collège Jean-de-Brébeuf</b>
+								<ul>
+									<li>BrébeufHx Hackathon Organizer (co-founder)</li>
+									<li>Fencing Top 8 in Québec (2016, 2017)</li>
+									<li>Grades 7 to 11</li>
+								</ul>
+							</li>
+						</ul>				</div>
+					<div id="id-writing" class="c-block">
+
+						<h3>Publications + Writing</h3>
+						
+						<ul>
+							<li><b>Publications and Poster Presentations</b></li>
+							<ol class="c-writings-list">
+								<li>T. R. Ralambomihanta, S. Mohammadzadeh, M. S. N. Islam, W. Jabbour, <b>L. Liang</b>, ‘Scavenging Hyena: Distilling Transformers into Long Convolution Models,’ https://arxiv.org/abs/2401.17574, Jan. 2024. </li>
+								<li><b>L. Liang</b>, V. Pak, N. Irshaid, and Z. Yang, ‘Improving Classification Accuracy using Contrastive Principal Component Analysis’. (Manuscript in preparation.)</li>
+								<li>M. Joly-Chevrier, A. X.-L. Nguyen, <b>L. Liang</b>, M. Lesko-Krleza, and P. Lefrançois, ‘The State of Artificial Intelligence in Skin Cancer Publications’, Journal of Cutaneous Medicine and Surgery. (Accepted)</li>
+								<li>V. Cruz and <b>L. Liang</b>, ‘AGORA: a Language Model for Safe Speech-to-Text Conversion’, Canadian Undergraduate Conference on Artificial Intelligence (CUCAI), 2023. (Awarded top 6 overall paper at CUCAI 23.)</li>
+								<li><b>L. Liang</b>, ‘Computer-Based miRNA Predictions to Inhibit SARS-Cov-2 Replication’, Regeneron ISEF, 2021. (Awarded 4th place in computational biology).</li>
+								<li><b>L. Liang</b>, ‘Using a Computer Model to Assist Neuron Regeneration’, Canada-Wide Science Fair (CWSF), 2019. (Awarded a bronze medal in the senior category).</li>
+								<li><b>L. Liang</b>, ‘Using AI to Understand Neuronal Behaviour’, Canada-Wide Science Fair (CWSF), 2018. (Awarded a bronze medal in the intermediate category).</li>
+							</ol>
+							<li><b>Speaking Opportunities</b></li>
+							<ol class="c-writings-list">
+								<li>U. Kalkar and <b>L. Liang</b>, ‘Panel on Machine Bias,’ International Development Conference at the University of Toronto Scarborough, 2024.</li>
+								<li><b>L. Liang</b>, ‘A Stochastic Optimization Approach for Energy-Efficient Robotic Manipulator Simulations,’ Seminars on Undergraduate Mathematics in Montreal (SUMM 2024), 2024. (<a href="https://www.summ.xyz/docs/programme.pdf" target="_blank">link</a>)</li>
+								<li><b>L. Liang</b>, ‘Bioinformatics, Molecular Solutions, Intelligent Machines, and the Future of Medical Care,’ Big Data and AI Toronto (BDAIT 23), 2023. (<a href="https://www.bigdata-toronto.com/the-speakers/64b015fa5cd87c003bed6e11" target="_blank">link</a>)</li>
+								<li><b>L. Liang</b>, ‘Controlling a Robotic Arm using Computer Vision’, MIT Splash, 2022. (<a href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html" target="_blank">link</a>) (E15416 course taught at MIT Splash)</li>
+								<li><b>L. Liang</b>, ‘Identifying Cancer Cells Using Genetic Analysis and Computer Vision’, MIT Splash, 2022. (<a href="https://esp.mit.edu/teach/teachers/laurenceliang1/bio.html" target="_blank">link</a>) (S15418 course taught at MIT Splash)</li>
+								<li><b>L. Liang</b>, ‘Curing Disease from our Living Rooms: a Vision for Bioinformatics,’ TEDx McGill, 2021. (<a href="https://www.youtube.com/watch?v=dymNjbB6q4E&t=3s" target="_blank">link</a>)</li>
+							</ol>
+							<li><b>Essays & Newsletter</b></li>
+							<ul>
+								<li>I share essays in my <a href="/writing/index.html">writings page.</a></li>
+								<li>I share updates on <a target="_blank" href="https://laurenceliang.substack.com/">Substack</a>!</li>
+							</ul>
+						</ul>
+					</div>
+					<div id="id-contact" class="c-block-last">
+						<h3>Contact</h3>
+						<p>I'd love to connnect via <a target="_blank" href="mailto:laurence.liang@mail.mcgill.ca">laurence.liang [at] mail.mcgill.ca</a></p>
+						<p>I'm also active on</p>
+						<ul>
+							<li><a target="_blank" href="https://www.linkedin.com/in/laurence-liang-innovator/">LinkedIn</a></li>
+							<li><a target="_blank" href="https://github.com/TheFloatingString">GitHub</a></li>
+							<li><a target="_blank" href="https://twitter.com/LaurenceLiang1">Twitter</a></li>
+						</ul>
+						<p>Thank you for visiting, and excited to get in touch!</p>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+		
+	</body>
+</html>
