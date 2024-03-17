@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>			
+		<title>Laurence Liang</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+
+		<style type="text/css">
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				/* background-color: rgb(235, 235, 235); */
+				color: rgb(3, 3, 15);
+				/* font-family: 'Times New Roman', Times, serif; */
+				font-family: "Inter"
+			}
+
+			li {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+
+			a {
+				color: rgb(3, 3, 15);
+			}
+
+			a:hover {
+				color: rgb(91, 92, 190);
+			}
+
+			#id-contact {
+				margin-bottom: 1000px;
+			}
+
+			.c-flex{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.c-col{
+				flex: 1;
+			}
+
+			.c-col-nav{
+				min-width: 250px;
+				/* max-width: 150px; */
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+				margin-bottom: 50px;
+				padding-top: 18px;
+
+			}
+
+			.c-col-content {
+				min-width: 300px;
+				max-width: 500px;
+
+				padding-left: 3%;
+				padding-right: 3%;
+
+                padding-bottom: 500px;
+
+			}
+
+			.c-block {
+				padding-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			.c-block-first {
+				padding-top: 25px;
+			}
+
+			.c-block-last {
+				padding-top: 25px;
+				margin-bottom: 50px;
+			}
+
+			.c-mainItem {
+				margin-bottom: 15px;
+				margin-top: 15px
+			}
+
+			.c-writings-list {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.c-no-underline {
+				text-decoration: none;
+			}
+
+			@media (max-width: 654px) {
+				.c-col-nav {
+					text-align: center;
+				}
+
+				#id-showLeftTerm{
+					display: none;	
+				}
+				
+			}
+
+
+			@media (min-width: 655px) {
+
+				.c-col-nav {
+					position: fixed;
+					text-align: right;
+					right: calc(65vw);
+				}
+
+				.c-col-content {
+					position: absolute;
+					left: calc(35vw);
+				}
+
+			}
+
+
+		</style>
+
+		<link rel="shortcut icon"  href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/U%2B269B.svg/2000px-U%2B269B.svg.png">
+	</head>
+	<body>
+		<div id="c-mainContainer">
+			<div class="c-flex">
+				<div id="id-mainNavbar" class="c-col c-col-nav">
+					<a class="c-no-underline" href="/writing/index.html"><p><b>Laurence's Writings</b></p></a>
+				</div>
+				<div class="c-col c-col-content">
+
+
+                    <h1>Multipliers</h1>
+
+                    <p>March 2024.</p>
+                    <br/>
+                    <br/>
+
+                    <p>Since starting university, I&#39;ve often faced a sense of regret, when thinking about missed opportunities. Focusing on missed opportunities is not a healthy habit to have, though it&#39;s something that&#39;s I&#39;ve been living through for some time.</p>
+                    <p>Ever since about grade 9, rarely did a year go by where I decided to take the year &quot;easy&quot;. In my later high school years, while doing full-time schoolwork, I&#39;d also spend time with my schoolmates hosting hackathons and coding events, and spent countless hours in front of a computer writing code for science fair projects - all while commuting 2 hours to school every day on the city bus/train. In CEGEP, aside from schoolwork full-time, I would spend hours every week as part of student government in meetings and projects, and more hours organizing coding events as hackathon season approached. And during my first two years of my undergrad, while taking a full-course load every semester, I worked part-time for an early-stage startup, was deeply involved in hackathon organizing with sponsorships, and worked on design and research projects - while taking part in startup programs at one point.</p>
+                    <p>For the past many years, during the median work/school day, my working hours extended beyond class hours. Yet, in spite of these hours, I&#39;ve often felt pained by missed opportunities during this time - opportunities that I missed due to mistakes I made in the process. I feel that this is a shared experience for many people: the reality of putting in hard work year after year, and to encounter select failures, over and over again, on a set of goals that you really wished to attain. I also realize that this will be part of a new reality in the years after undergrad: in an eventual field where everyone approaches the upper limit of workable hours per day, how can you excel, contribute to breakthroughs, and do so consistently?</p>
+                    <p>In retrospect, you need to ask baseline questions. For me, I&#39;ve struggled many times with courses in my undergrad - though the results aren&#39;t so unpredictable, given questions such as:</p>
+                    <ul>
+                    <li>How many exercises do I solve on a daily basis?</li>
+                    <li>How many minutes per day do I spend reviewing my course notes?</li>
+                    <li>Did I attend office hours or extra problem solving sessions?</li>
+                    </ul>
+                    <p>You need to first answer these baseline questions: even if you are extremely passionate about what you do, if you cannot answer &quot;yes&quot; to baseline questions in your field, you need to make these a priority.</p>
+                    <p>Another way of maximizing success is to think of success as a conditional probability function $P$:
+                    $$
+                    P(A|E_1)=?
+                    $$
+                    Using a coursework example, what is the probability of a student getting an &#39;A&#39; in a course, provided that they averaged three solved exercises per day ($E_1$) during the entire semester? If you can identify meaningful daily acts to integrate using this mode of thinking, you should be able to further solidify your baseline of actions to take.</p>
+                    <p>However, there exists an upper limit: when you join a field where everyone is working all the workable hours in a day, how can you continue to contribute to meaningful breakthroughs, if you are limited by workable hours?</p>
+                    <p>We need to think about leverage, about having &quot;multipliers&quot; for our work:
+                    $$
+                    O(h,m) = m\times h
+                    $$
+                    where the output $O$ depends on $h$ the hours you put in, and $m$: multipliers. </p>
+                    <p>Multipliers cannot be an absolute substitute for hard work, but can generate noticeable gains when you feel like you are reaching the upper limit of workable hours per day. </p>
+                    <p>Using a <a href="https://twitter.com/snowmaker/status/1767060605050278314">Jared Friedman tweet about BFS/DFS in startups</a> as an analogy, I believe that people can encounter multipliers in two different ways: either via a depth-first search (DFS) route where you happen to learn about multipliers for you work organically (almost as a secondary effect of your work itself), or via a breadth-first search (BFS) where you learn about a set of multipliers from a source or from someone else. </p>
+                    <p>Consider writing your resume for job applications: the DFS approach would involve you sending your resume to employers, and tweaking your resume based on job outcomes or feedback you get along the way. The BFS approach involves you finding a centralized document or video with a set of rules for your resume, and immediately applying those rules.</p>
+                    <p>DFS is organic with respect to your work as a primary objective, but time consuming, as multipliers are a secondary effect. </p>
+                    <p>BFS is artificial, but allows you to learn about multipliers all at once.</p>
+                    <p>To implement BFS for multipliers, the trivial heuristic is to look up existing documentation or resources on multipliers that people have already discovered (or that exist publicly). However, to obtain a more complete solution, a second approach involves asking: given the work I put in today, how can I further improve my work?*</p>
+                    <p>There are undoubtedly many good multipliers. From my experience, these ones should be implemented early on:</p>
+                    <ul>
+                    <li><strong>Set Goals.</strong> Having clear, quantitative goals on paper (as opposed to nothing on paper) makes a difference. </li>
+                    <li><strong>Attitude.</strong> One way of building the right attitude is by start with small wins, and by increasing the scope of your work, you begin to build the right attitude for your field. </li>
+                    <li><strong>Practice the ask.</strong> For some time, my way of thinking was that results should be a direct product of the primary work that I put in. However, practicing asking for things - whether it&#39;s a cold contact or someone you&#39;ve been worked with before - can often lead to leaps in returns. Asking can be hard, but it is a multiplier.</li>
+                    <li><strong>Commit to recurring meetings to share updates.</strong> Find a supervisor, client or advisor, and commit to sharing updates on a regular basis. The idea of finding a quiet place and writing code is blissful (and one that I was drawn to), though from personal experience, my rate of work produced has been most effective with external deadlines or recurring project updates.</li>
+                    <li><strong>Choose your environment.</strong> Your environment matters: your place of work, the organizations you join, the places where you spend most of your time and most importantly, the people who you interact with and learn from.</li>
+                    <li><strong>Know when to collaborate.</strong> Having a second person work on the same project reduces the workload by 50%. Three people reduces it by ~67%. And so forth. There will be a point of diminishing returns at the early stages of a project, though know when to collaborate, and how large (or small) the group should be before the overall project gains get overshadowed by the cost of coordinating the team itself. </li>
+                    <li><strong>Find a coach/mentor.</strong> This can be hard, though find someone who can provide honest feedback on your performance, and identify ways for you to improve. </li>
+                    <li><strong>Ask what are the main problems to solve in your field.</strong> While this may seem an obvious question to ask, from personal experience it&#39;s easy to focus on details or sub-topics and miss the direction of where the current field is headed towards. (<a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">&quot;You and Your Research&quot;</a> by Richard Hamming is a great read on this topic.)<ul>
+                    <li>Similarly, filter out the signal from the noise. Perhaps there&#39;s something that many people are spending time working on right now, but ask yourself instead: what are the top X most important things I should focus on, that will define my next 5-10 years?</li>
+                    </ul>
+                    </li>
+                    <li><strong>Know how to avoid common mistakes.</strong> I had a tendency to want to discover things by myself, though as someone in my 20s, avoidable mistakes can come at a large cost in terms of time spent.</li>
+                    <li><strong>Upgrades.</strong> I used to write with pens that cost 10 cents apiece. After upgrading to a pen just under $5 (the cost of a slice of pizza), it made my writing experience much better. <ul>
+                    <li>However, do not confuse multipliers with buying things for the sake of displaying them for social validation. </li>
+                    <li>Evaluate cost and opportunity: Can I justify cost X for probability Y of acquiring opportunity Z?</li>
+                    </ul>
+                    </li>
+                    <li><strong>Join a group that produces great work.</strong> This applies more for undergrad life. One such example are university labs. The people in a lab </li>
+                    <li><strong>Surround yourself with people who are smarter or better than you.</strong> Don&#39;t just be there physically, introduce yourself and ask questions - if possible, ask to be involved in a project that they are working on. </li>
+                    <li><strong>Delegate.</strong> Years ago, I worked in a team in a lead role, I often wanted to set a creative direction for the team to follow, and also felt insecure if I wasn&#39;t the main contributor for every single facet of a project. When you work with a team, very often your team members are enthusiastic and want to contribute. Delegate tasks. As a general heuristic, build a team where people have skills that exceed yours. It is easier said than done, though in a lead role, your goal isn&#39;t necessarily to author every single line of code or email sent: your role is to bring people together to get the job done, and to support each person in your team such that they can grow and develop. This doesn&#39;t mean you should sit back: you should also commit your share of the work, whether it&#39;s writing code, sending emails or the things that your team is doing. </li>
+                    <li><strong>Rapid feedback.</strong> Find ways to obtain rapid feedback, and iterate on this. This can take the form of client meetings, Q&amp;A during presentations, or meetings with your supervisor. </li>
+                    <li><strong>Make a name for yourself.</strong> This then leads to the question, how? The answer is different for everyone, though from my experience, posting on relevant social platforms (i.e. LinkedIn), keeping an online presence, and delivering results on time are good places to start with. </li>
+                    <li><strong>If it scares you, strongly consider it.</strong> This is a good heuristic to implement, when deciding what next steps to take. </li>
+                    <li><strong>Do not take failure or incompletion as an answer.</strong> Many projects I started often stalled or encountered some failure of sorts. Do not let that be a stopping point. From personal experience, some of my personal work that I consider most significant was due to the fact that after failing, I felt even more motivated to work harder to do things right. (My first science fair project didn&#39;t make it to provincials; my next two projects made nationals two years in a row. Had I taken failure as an end point, nationals - which was an inflection point in high school - would not have happened.) </li>
+                    <li><strong>Necessity is the mother of all creation.</strong> Perhaps not all creation, though necessity has pushed me to think differently, and commit to projects that I wouldn&#39;t have if everything was going smoothly. After my second year of undergrad, I struggled academically and realized that if I wanted to be relevant in research, I needed to go above and beyond what I had. </li>
+                    </ul>
+                    <p>There are also some more practical multipliers for some life stages that I&#39;ve been through. These examples are more biased towards my past trajectory (leaning towards research), though I believe the takeaways can be generalized to any field:</p>
+                    <ul>
+                    <li>School<ul>
+                    <li>Join a lab or research group, and commit to contribute to a publication</li>
+                    <li>(More general) join a group that puts you in an position where you need to learn things you weren&#39;t capable of. <ul>
+                    <li>Like &quot;necessity is the mother of all creation&quot;-type environments.</li>
+                    <li>The <em><a href="https://a16z.com/wp-content/uploads/2021/08/The-pmarca-Blog-Archives.pdf">Pmarca Blog Archives</a></em> by Marc Andreessen touches on this topic. Marc Andreessen&#39;s advice can be very direct, though the takeaway is his approach to identifying what engagements to commit to in school.  </li>
+                    <li>My recommendation: commit to roles where you interact with the real world (i.e. sponsorship), or develop a technical skill by contributing to a technical project you can&#39;t yet build on your own (i.e. learning about locks and multithreading for a neurotech project). </li>
+                    </ul>
+                    </li>
+                    <li>Go to office hours</li>
+                    <li>Meet with advisors to strategize applications (i.e. university admissions) and career paths</li>
+                    <li>Go to conferences and guest lectures</li>
+                    <li>Study and work with people smarter than you</li>
+                    <li>Ask someone older than you for advice</li>
+                    <li>Apply to scholarships and funding opportunities</li>
+                    <li>Join communities (i.e. science fairs, groups with strong alumni presence)</li>
+                    <li>Programming and math are multipliers</li>
+                    </ul>
+                    </li>
+                    <li>Startup<ul>
+                    <li>Find a mentor.</li>
+                    <li>Find clients early, and meet with them regularly.</li>
+                    <li>Join an accelerator program, as long as you and the program share the same objectives and expectations. </li>
+                    <li>Build a team by surrounding yourself with people who have skills that are better than yours.</li>
+                    </ul>
+                    </li>
+                    <li>Jobs + Professional Career<ul>
+                    <li>Maintain your LinkedIn, and post updates regularly</li>
+                    <li>Get feedback on your resume</li>
+                    <li>Practice direct outreach </li>
+                    </ul>
+                    </li>
+                    <li>Research<ul>
+                    <li>Join a research group</li>
+                    <li>Ask for feedback regularly, and commit to feedback</li>
+                    <li>Read papers consistently </li>
+                    <li>Build a profile, such as your Google Scholar</li>
+                    <li>Pursue goal-driven research as opposed to idea-drive research (<a href="http://joschu.net/blog/opinionated-guide-ml-research.html">&quot;An Opinionated Guide to ML Research&quot;</a> by John Schulman)</li>
+                    </ul>
+                    </li>
+                    <li>Finance<ul>
+                    <li>Sign up for reward programs that have no sign-up cost</li>
+                    <li>Don&#39;t treat your bank account as a black box: identify your sources of income and expenses carefully.</li>
+                    </ul>
+                    </li>
+                    <li>Social<ul>
+                    <li>Take group photos when you meet, and share photos</li>
+                    </ul>
+                    </li>
+                    <li>Personal development<ul>
+                    <li>Start your own organization</li>
+                    <li>Launch your personal website</li>
+                    <li>Write and upload things you create to the Internet</li>
+                    <li>Read</li>
+                    <li>Exercise</li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <p>Once again, multipliers are not a substitute for baseline tasks that you should complete, nor are multipliers a substitute for hard work, strong work ethic and grounded morals. Though for all those who work hard, hit the upper limit of workable hours per day, and still encounter one failure after the other - keep on pushing, and integrate multipliers in your work processes. Don&#39;t be bound by the past. My personal take is that if I got this far with all the mistakes that I made in the past, just imagine how far I will go by improving my current self. </p>
+                    <p>Things may be hard, but as you continue to value hard work, good morals, and integrate multipliers in your work, I have confidence that you will produce significant work, and I look forward to the good that you will contribute to our shared world in the coming years. </p>
+                    <h3 id="neovim-analogy">Neovim Analogy</h3>
+                    <p>I first met terminal-based code editors from a good friend that I look up to, many years ago. In recent years, I&#39;ve used Neovim as an editor to make quick edits, though found it cumbersome to use for larger programs or HTML/JSX syntax. </p>
+                    <p>However, earlier this year, I figured out how to install Neovim plug-ins: in about 10 minutes of work time (excluding non-working time), installing only a few plugins (parenthesis autocompletion and a custom color scheme being the significant ones), Neovim suddenly became a much more pleasant tool to use.</p>
+                    <p>The same applies to multipliers: what are things that you can set up in just minutes, but can multiply the expected results with the same work hours?</p>
+                    <h3 id="additional-guiding-questions">Additional Guiding Questions</h3>
+                    <ul>
+                    <li>What are multipliers that we can easily implement?</li>
+                    <li>What are the most important multipliers that I should consider?<h3 id="additional-note">Additional Note</h3>
+                    </li>
+                    </ul>
+                    <p>*Credit for this second approach goes to a social media post I read somewhere, which a friend of mine reacted to beforehand if I recall correctly. </p>
+                    
+                </div>
+            </div>	
+		</div>
+		
+	</body>
+</html>
+
+
