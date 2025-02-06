@@ -36,7 +36,7 @@ const work = await Promise.all(
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi! I'm Laurence, 
+      Hi! I'm Laurence,
       <!-- <span class="text-xl">👋🏻</span> -->
     </h4>
     <div class="space-y-16">
@@ -45,7 +45,10 @@ const work = await Promise.all(
           <p class="animate">
             I'm a student researcher at McGill University working on drone
             localization and multi-modal diffusion for robot perception, while
-            running open-source benchmarking hackathons and
+            running <Link
+              href="https://x.com/LaurenceLiang1/status/1861810031638757876"
+              >open-source benchmarking hackathons</Link
+            > and
 
             <Link href="https://lu.ma/calendar/cal-ePfMV2cpszn6sTy"
               >ML reading group meetups</Link
@@ -55,7 +58,7 @@ const work = await Promise.all(
             My past experience includes developing vision models for the
             Canadarm program at MDA Space, testing drones at ACSL in Japan as a
             Cansbridge Fellow, and co-authoring a workshop paper on distilling
-            state space language models that was accepted at ICML 2024. 
+            state space language models that was accepted at ICML 2024.
           </p>
           <!-- <p class="animate">
             I've also spent time working on/with startups, notably leading the core API development
@@ -65,19 +68,23 @@ const work = await Promise.all(
           <p class="animate">
             I'm currently interested to collaborate with academic and industry
             groups working on:
-            
+
             <ol class="animate">
-              <li>robotics research projects related to sensor
-                fusion, autonomous navigation and self-supervision for cross-domain
-                tasks</li>
-              <li>machine learning research on architectural improvements
-                (incl. state space models or accelerated optimizers) for generalizable learning</li>
+              <li>
+                robotics research projects related to sensor fusion, autonomous
+                navigation and self-supervision for cross-domain tasks
+              </li>
+              <li>
+                machine learning research on architectural improvements (incl.
+                state space models or accelerated optimizers) for generalizable
+                learning
+              </li>
             </ol>
           </p>
 
-            <p class="animate">
-            If you'd like to get in touch, please feel free to schedule a
-            coffee chat
+          <p class="animate">
+            If you'd like to get in touch, please feel free to schedule a coffee
+            chat
 
             <Link
               href="https://cal.com/laurenceliang"
@@ -86,21 +93,22 @@ const work = await Promise.all(
             >
               through my Cal.com
             </Link>, and I look forward to meeting you soon!
-            
           </p>
         </article>
       </section>
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">Latest posts</h5>
-          <Link href="/blog"> See all posts </Link>
+          <h5 class="font-semibold text-black dark:text-white">
+            Recent projects
+          </h5>
+          <Link href="/projects"> See all projects </Link>
         </div>
         <ul class="flex flex-col gap-4">
           {
-            blog.map((post) => (
+            projects.map((project) => (
               <li>
-                <ArrowCard entry={post} />
+                <ArrowCard entry={project} />
               </li>
             ))
           }
@@ -136,16 +144,14 @@ const work = await Promise.all(
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects"> See all projects </Link>
+          <h5 class="font-semibold text-black dark:text-white">Latest posts</h5>
+          <Link href="/blog"> See all posts </Link>
         </div>
         <ul class="flex flex-col gap-4">
           {
-            projects.map((project) => (
+            blog.map((post) => (
               <li>
-                <ArrowCard entry={project} />
+                <ArrowCard entry={post} />
               </li>
             ))
           }
@@ -156,7 +162,9 @@ const work = await Promise.all(
         <h5 class="font-semibold text-black dark:text-white">Let's Connect</h5>
         <article>
           <p>
-            Always excited to connect! I am most responsive via email (preferred method for messaging) and Cal.com (please book meetings directly there). 
+            Always excited to connect! I am most responsive via email (preferred
+            method for messaging) and Cal.com (please book meetings directly
+            there).
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
@@ -166,7 +174,7 @@ const work = await Promise.all(
               aria-label={`Email ${SITE.NAME}`}
             >
               {SITE.EMAIL}
-            </Link> 
+            </Link>
           </li>
           {
             SOCIALS.map((SOCIAL) => (
@@ -183,10 +191,14 @@ const work = await Promise.all(
               </li>
             ))
           }
-
         </ul>
         <h5 class="font-semibold text-black dark:text-white">Resume</h5>
-        <p><Link href="#">one-page resume</Link> / <Link href="#">full resume</Link></p>
+        <p>
+          <Link href="resume/Laurence_Liang_Resume.pdf">one-page resume</Link> /
+          <Link href="resume/Laurence_Liang_Resume_Full.pdf">full resume</Link>
+        </p>
+        <h5 class="font-semibold text-black dark:text-white">Newsletter</h5>
+        <p><Link href="https://laurenceliang.substack.com">Substack</Link></p>
       </section>
     </div>
   </Container>
