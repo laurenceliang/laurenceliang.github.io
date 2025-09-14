@@ -1,5 +1,5 @@
 ---
-title: Watermarking Generative Models
+title: A Case for Watermarking Generative Models
 author: Laurence Liang
 date: 2025-09-15
 tags: essays
