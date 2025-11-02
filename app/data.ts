@@ -2,7 +2,8 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  video?: string
+  photo?: string
   id: string
 }
 
@@ -13,6 +14,7 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  description?: string
 }
 
 type BlogPost = {
@@ -29,76 +31,124 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'State Space Model Distillation',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'Distilling a 70M attention transformer into a Hyena 70M model. Accepted at ES-FoMo-II at ICML 2024.',
+    link: 'https://arxiv.org/abs/2401.17574',
+    // video:
+      // 'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    photo: '/img/hyena_figure.png',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    name: 'Self-Driving Car',
+    description: 'Autonomous driving using vision inputs. Placed Top 24 at BFMC 2024 in Cluj-Napoca, Romania.',
+    link: 'https://youtu.be/ccUA8U04yuI',
+    // video:
+      // 'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0https://photos.app.goo.gl/FBBTXxY6wpLpMW9L8',
+    photo: '/img/self-driving-car.png',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Rootly (YC S21) AI Labs',
+    title: 'Member of Technical Staff',
+    start: '2025',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://rootly.ai',
     id: 'work1',
+    description: 'Built LLM coding evals, accepted as workshop papers at ICML 2025, ACL 2025, and NeurIPS 2025.'
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
+    company: 'McGill (DECAR, SuPER, MAIS), UBC (PRIME)',
+    title: 'Student Researcher',
+    start: '2023',
     end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
+    link: '#',
+    id: 'work1.1',
+    description: 'Multi-drone obstacle detection, RL for path planning for medical manipulators. SSM distillation (ICML 2024 workshop paper), self-refinement for LLM toxicity detection (NAACL 2024 workshop paper), LLMs for misinformation detection (SMASH 2025).'
   },
+  {
+    company: 'Groq',
+    title: 'Intern (Evals)',
+    start: '2025',
+    end: '2025',
+    link: 'https://groq.com',
+    id: 'work2',
+    description: 'Evaluation infrastructure. CI/CD, reproduced coding evals, and contributed to early releases for OpenBench.'
+  },
+  {
+    company: 'MDA Space',
+    title: 'Intern (Robotics, on Canadarm 2, 3)',
+    start: '2024',
+    end: '2024',
+    link: 'https://mda.space',
+    id: 'work3',
+    description: 'Control system optimization for the Candarm 3 in simulation, and 10x speedup for the visual similarity algorithm for Canadarm 2 debris detection.'
+  },
+  {
+    company: "ACSL Ltd",
+    title: "Intern (Drone R&D)",
+    start: "2022",
+    end: "2022",
+    link: "https://www.acsl.co.jp/en/",
+    id: "work4",
+    description: 'Neural nets for drone motor performance modeling at Japan\'s largest industrial drone manufacturer.'
+  },
+  {
+    company: "Perceive Now",
+    title: "Data Scientist",
+    start: "2021",
+    end: "2023",
+    link: "https://perceivenow.ai/",
+    id: "work5",
+    description: 'Developed v1 of the core API, contributed to the startup raising a 6-figure round with an $8.5M valuation.'
+  },
+  {
+    company: "Soulzone",
+    title: "Backend Developer",
+    start: "2019",
+    end: "2019",
+    link: "#",
+    id: "work6",
+    description: 'Joined a startup and worked on Backend & Apache Solr before starting CEGEP.' 
+  },
+  {
+    company: "Expedia",
+    title: "Software Developer (Apprentice Program)",
+    start: "2018",
+    end: "2018",
+    link: "https://www.expedia.com",
+    id: "work7",
+    description: 'Full-stack app to estimate semantic similarity between web pages. '
+  }
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Opinionated Rules for Research',
+    description: 'Guiding principles to quickstart research projects.',
+    link: '/blog/rules_for_research',
     uid: 'blog-1',
   },
   {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'How Do Reasoning Models Work?',
+    description: 'The big picture ideas behind reasoning models.',
+    link: '/blog/reasoning_models',
     uid: 'blog-2',
   },
   {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Multipliers',
+    description: 'Things to do to increase output.',
+    link: '/blog/multipliers',
     uid: 'blog-3',
   },
   {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
+    title: 'An Epsilon-Greedy Analogy for Producing Work',
+    description: 'Breadth vs depth trade-offs.',
+    link: '/blog/epsilon',
     uid: 'blog-4',
   },
 ]
@@ -106,20 +156,20 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/TheFloatingString',
   },
   {
     label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://twitter.com/LaurenceLiang1',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/laurence-liang-innovator',
   },
   {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'Substack',
+    link: 'https://laurenceliang.substack.com',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'laurence.liang@mail.mcgill.ca'

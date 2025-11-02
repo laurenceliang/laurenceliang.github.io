@@ -19,6 +19,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import { dot } from 'node:test/reporters'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -39,11 +40,14 @@ const TRANSITION_SECTION = {
   duration: 0.3,
 }
 
-type ProjectVideoProps = {
-  src: string
+type ProjectMediaProps = {
+  video?: string
+  photo?: string
 }
 
-function ProjectVideo({ src }: ProjectVideoProps) {
+function ProjectMedia({ video, photo }: ProjectMediaProps) {
+  if (!video && !photo) return null
+
   return (
     <MorphingDialog
       transition={{
@@ -53,23 +57,39 @@ function ProjectVideo({ src }: ProjectVideoProps) {
       }}
     >
       <MorphingDialogTrigger>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          className="aspect-video w-full cursor-zoom-in rounded-xl"
-        />
-      </MorphingDialogTrigger>
-      <MorphingDialogContainer>
-        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+        {video ? (
           <video
-            src={src}
+            src={video}
             autoPlay
             loop
             muted
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
+        ) : (
+          <img
+            src={photo}
+            alt="Project preview"
+            className="aspect-video w-full cursor-zoom-in rounded-xl object-cover"
+          />
+        )}
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          {video ? (
+            <video
+              src={video}
+              autoPlay
+              loop
+              muted
+              className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            />
+          ) : (
+            <img
+              src={photo}
+              alt="Project preview"
+              className="aspect-video h-[50vh] w-full rounded-xl object-cover md:h-[70vh]"
+            />
+          )}
         </MorphingDialogContent>
         <MorphingDialogClose
           className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
@@ -137,8 +157,14 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            Hi!
+            <br/><br/>
+            I'm currently building <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/> 
+            and I'm working on <b>robotics research</b> with labs at McGill and UBC.
+            <br/><br/>
+            I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robust controls for robots, and RL for robot learning. 
+            <br/><br/>
+            Please feel free to reach out (contact details below), I'd love to connect!
           </p>
         </div>
       </motion.section>
@@ -152,7 +178,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <ProjectMedia video={project.video} photo={project.photo} />
               </div>
               <div className="px-1">
                 <a
@@ -204,6 +230,11 @@ export default function Personal() {
                     {job.start} - {job.end}
                   </p>
                 </div>
+                {job.description && (
+                  <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+                    {job.description}
+                  </p>
+                )}
               </div>
             </a>
           ))}
@@ -251,12 +282,16 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
+        <div>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
+          The best way to get in touch is through email at {' '}
+          <a className="dark:text-zinc-200" href={`mailto:${EMAIL}`}>
+            {"laurence.liang [at] mail.mcgill.ca"}
+          </a>.   
+          <br/><br/>
+          If you want to meet, feel free to book directly through my <a href="https://cal.com/laurenceliang" className="underline dark:text-zinc-300">Cal.com page</a>. 
         </p>
+        </div>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink key={link.label} link={link.link}>
