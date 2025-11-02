@@ -7,6 +7,11 @@ import { remarkFrontmatterTitle } from './lib/remark-frontmatter-title.mjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/nim',
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 };
