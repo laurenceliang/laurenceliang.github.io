@@ -19,7 +19,13 @@ export function Header() {
           ML & Robotics Research
         </TextEffect>
       </div>
-      <nav>
+      <nav className="flex items-center gap-4">
+        <Link
+          href="/projects"
+          className="text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+        >
+          Projects
+        </Link>
         <Link
           href="/blog"
           className="text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"

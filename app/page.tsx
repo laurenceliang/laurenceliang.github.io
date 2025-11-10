@@ -173,9 +173,17 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <div className="mb-5 flex items-center justify-between">
+          <h3 className="text-lg font-medium">Selected Projects</h3>
+          <Link
+            href="/projects"
+            className="text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            View all →
+          </Link>
+        </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {PROJECTS.map((project) => (
+          {PROJECTS.filter((project) => project.id === 'project1' || project.id === 'project2').map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
                 <ProjectMedia video={project.video} photo={project.photo} />
