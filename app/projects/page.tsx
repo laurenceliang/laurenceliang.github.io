@@ -31,6 +31,8 @@ export default function ProjectsPage() {
         <h1 className="mb-2 text-3xl font-medium">Projects</h1>
         <p className="text-zinc-600 dark:text-zinc-400">
           Robots, machine learning, and more.
+          <br />
+          <i>Click on a project title for additional info.</i>
         </p>
       </motion.div>
 

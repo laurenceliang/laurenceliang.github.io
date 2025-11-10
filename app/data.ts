@@ -31,6 +31,24 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'Environment Free Coding Benchmarks',
+    description: 'Lead authored a new benchmark to evaluate LLM code understanding capabilities on 3,000+ questions derived from GitHub pull requests. Presented as a workshop paper at KnowFM at ACL 2025.',
+    link: 'https://openreview.net/forum?id=Rny4QwVUYs',
+    id: 'project-efcb',
+  },
+  {
+    name: 'Obstacle Detection using Radio Trasnsceivers on Drones',
+    description: 'Obtained new state of the art results for obstacle detection with UWB radio waves using drones. Work done as an extension of MECH 498/499 with the DECAR Lab at McGill. Work under review, available upon request.',
+    link: '#',
+    id: 'project-uwb',
+  },
+  {
+    name: 'Fine-Tuning Pi-Zero on a Piper Robot Arm',
+    description: 'At the Zurich Builds hackathon, we fine-tuned the Pi-Zero VLA model on pick-and-place tasks for serving coffee.',
+    link: 'https://www.youtube.com/watch?v=4begCgQFvEM',
+    id: 'project-pi-zero',
+  },
+  {
     name: 'State Space Model Distillation',
     description:
       'Distilling a 70M attention transformer into a Hyena 70M model. Accepted at ES-FoMo-II at ICML 2024.',
