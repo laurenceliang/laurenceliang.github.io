@@ -245,7 +245,15 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-3 text-lg font-medium">Blog</h3>
+        <div className="mb-3 flex items-center justify-between">
+          <h3 className="text-lg font-medium">Selected Blog Posts</h3>
+          <Link
+            href="/blog"
+            className="text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            View all →
+          </Link>
+        </div>
         <div className="flex flex-col space-y-0">
           <AnimatedBackground
             enableHover
