@@ -162,7 +162,7 @@ export default function Personal() {
             I'm currently building <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/> 
             and I'm working on <b>robotics research</b> with labs at McGill and UBC.
             <br/><br/>
-            I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robust controls for robots, and RL for robot learning. 
+            I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robot perception, and RL for robot learning. 
             <br/><br/>
             Please feel free to reach out (contact details below), I'd love to connect!
           </p>
