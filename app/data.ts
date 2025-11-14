@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Obstacle Detection using Radio Trasnsceivers on Drones',
-    description: 'Obtained new state of the art results for obstacle detection with UWB radio waves using drones. Work done as an extension of MECH 498/499 with the DECAR Lab at McGill. Work under review, available upon request.',
+    description: 'Obtained new state of the art results for obstacle detection with UWB radio waves using drones. Work done as an extension of MECH 498/499 with the DECAR Lab at McGill. Work under review at IEEE ICRA, available upon request.',
     link: '#',
     id: 'project-uwb',
   },
