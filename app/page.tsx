@@ -1,4 +1,5 @@
 'use client'
+import React from 'react'
 import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
@@ -144,6 +145,38 @@ function MagneticSocialLink({
 }
 
 export default function Personal() {
+  const [hoveredSection, setHoveredSection] = React.useState<number | null>(null)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const width = rect.width
+    const percentage = (x / width) * 100
+
+    let section = 0
+    if (percentage < 40) {
+      section = 0
+    } else if (percentage < 60) {
+      section = 1
+    } else if (percentage < 80) {
+      section = 2
+    } else {
+      section = 3
+    }
+    setHoveredSection(section)
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredSection(null)
+  }
+
+  const sectionCaptions = [
+    'BFMC 2024 Self-Driving Car Project',
+    'One-Shot Joint Pose Estimation Project',
+    'Worked on vision and control models for the Canadarm program at MDA Space (public domain image)',
+    'VLA fine tuned for a coffee-serving robot (Zurich Builds 2025)'
+  ]
+
   return (
     <motion.main
       className="space-y-24"
@@ -156,6 +189,74 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
+          <div className="mb-3">
+            <div
+              className="relative overflow-hidden rounded-xl"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="relative">
+                <img
+                  src="/header_img.png"
+                  alt="Header"
+                  className="w-full"
+                />
+                {/* Blur overlays - blur everything EXCEPT the hovered section */}
+                {hoveredSection !== null && (
+                  <>
+                    {/* Blur section 0 if not hovered */}
+                    {hoveredSection !== 0 && (
+                      <div
+                        className="pointer-events-none absolute inset-0 transition-all duration-500"
+                        style={{
+                          clipPath: 'inset(0 60% 0 0)',
+                          backdropFilter: 'blur(8px)',
+                        }}
+                      />
+                    )}
+                    {/* Blur section 1 if not hovered */}
+                    {hoveredSection !== 1 && (
+                      <div
+                        className="pointer-events-none absolute inset-0 transition-all duration-500"
+                        style={{
+                          clipPath: 'inset(0 40% 0 40%)',
+                          backdropFilter: 'blur(8px)',
+                        }}
+                      />
+                    )}
+                    {/* Blur section 2 if not hovered */}
+                    {hoveredSection !== 2 && (
+                      <div
+                        className="pointer-events-none absolute inset-0 transition-all duration-500"
+                        style={{
+                          clipPath: 'inset(0 20% 0 60%)',
+                          backdropFilter: 'blur(8px)',
+                        }}
+                      />
+                    )}
+                    {/* Blur section 3 if not hovered */}
+                    {hoveredSection !== 3 && (
+                      <div
+                        className="pointer-events-none absolute inset-0 transition-all duration-500"
+                        style={{
+                          clipPath: 'inset(0 0 0 80%)',
+                          backdropFilter: 'blur(8px)',
+                        }}
+                      />
+                    )}
+                  </>
+                )}
+              </div>
+            </div>
+            {/* Caption below image */}
+            <div className="h-6 px-1">
+              {hoveredSection !== null && (
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 transition-opacity duration-500">
+                  {sectionCaptions[hoveredSection]}
+                </p>
+              )}
+            </div>
+          </div>
           <p className="text-zinc-600 dark:text-zinc-400">
             Hi!
             <br/><br/>
