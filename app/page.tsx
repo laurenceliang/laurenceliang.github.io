@@ -172,7 +172,7 @@ export default function Personal() {
 
   const sectionCaptions = [
     'BFMC 2024 Self-Driving Car Project',
-    'One-Shot Joint Pose Estimation Project',
+    'One-Shot Joint Pose Estimation Project (to present at CVIS 2025)',
     'Worked on vision and control models for the Canadarm program at MDA Space (public domain image)',
     'VLA fine tuned for a coffee-serving robot (Zurich Builds 2025)'
   ]
