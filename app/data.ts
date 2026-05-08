@@ -5,6 +5,7 @@ type Project = {
   video?: string
   photo?: string
   id: string
+  icon?: string
 }
 
 type WorkExperience = {
@@ -36,18 +37,21 @@ export const PROJECTS: Project[] = [
     description: 'Lead authored a new benchmark to evaluate LLM code understanding capabilities on 3,000+ questions derived from GitHub pull requests. Presented as a workshop paper at KnowFM at ACL 2025.',
     link: 'https://openreview.net/forum?id=Rny4QwVUYs',
     id: 'project-efcb',
+    icon: 'Code2',
   },
   {
     name: 'Obstacle Detection using Radio Trasnsceivers on Drones',
     description: 'Obtained new state of the art results for obstacle detection with UWB radio waves using drones. Work done as an extension of MECH 498/499 with the DECAR Lab at McGill. Work under review at IEEE ICRA, available upon request.',
     link: '#',
     id: 'project-uwb',
+    icon: 'Radio',
   },
   {
     name: 'Fine-Tuning Pi-Zero on a Piper Robot Arm',
     description: 'At the Zurich Builds hackathon, we fine-tuned the Pi-Zero VLA model on pick-and-place tasks for serving coffee.',
     link: 'https://www.youtube.com/watch?v=4begCgQFvEM',
     id: 'project-pi-zero',
+    icon: 'Bot',
   },
   {
     name: 'State Space Model Distillation',
@@ -58,6 +62,7 @@ export const PROJECTS: Project[] = [
       // 'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
     photo: '/img/hyena_figure.png',
     id: 'project1',
+    icon: 'BrainCircuit',
   },
   {
     name: 'Self-Driving Car',
@@ -67,16 +72,28 @@ export const PROJECTS: Project[] = [
       // 'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0https://photos.app.goo.gl/FBBTXxY6wpLpMW9L8',
     photo: '/img/self-driving-car.png',
     id: 'project2',
+    icon: 'Car',
   },
   {
     name: 'Underflow',
     description: '(PennApps 2024) Command line interface to estimate deployment costs for any GitHub repository.',
     link: 'https://github.com/stevensusas/Underflow',
     id: 'project3',
+    icon: 'Terminal',
   }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    company: 'Cohere Labs',
+    title: 'Community Member',
+    start: '2026',
+    end: 'Present',
+    link: 'https://github.com/Cohere-Labs',
+    id: 'work-cohere',
+    description: 'Contributing to open source research on foundation models.',
+    logo: 'https://github.com/Cohere-Labs.png',
+  },
   {
     company: 'Rootly (YC S21) AI Labs',
     title: 'Member of Technical Staff',

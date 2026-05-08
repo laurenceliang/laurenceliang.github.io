@@ -262,7 +262,7 @@ export default function Personal() {
               <br/><br/>
               Please feel free to reach out (contact details below), I'd love to connect!
             </p>
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-1 sm:pt-5">
               <img
                 src="/img/profile_stylized.png"
                 alt="Laurence Liang"
@@ -336,7 +336,7 @@ export default function Personal() {
                       <img
                         src={job.logo}
                         alt={job.company}
-                        className="h-8 w-8 flex-shrink-0 rounded-md object-contain"
+                        className="h-8 w-8 flex-shrink-0 rounded-md object-contain bg-white"
                       />
                     )}
                     <div>
