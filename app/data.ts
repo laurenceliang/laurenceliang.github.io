@@ -15,6 +15,7 @@ type WorkExperience = {
   link: string
   id: string
   description?: string
+  logo?: string
 }
 
 type BlogPost = {
@@ -83,7 +84,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: 'https://rootly.ai',
     id: 'work1',
-    description: 'Built LLM coding evals, accepted as workshop papers at ICML 2025, ACL 2025, and NeurIPS 2025.'
+    description: 'Built LLM coding evals, accepted as workshop papers at ICML 2025, ACL 2025, and NeurIPS 2025.',
+    logo: 'https://www.google.com/s2/favicons?domain=rootly.ai&sz=128',
   },
   {
     company: 'McGill (DECAR, SuPER, MAIS), UBC (PRIME)',
@@ -92,7 +94,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Present',
     link: '#',
     id: 'work1.1',
-    description: 'Multi-drone obstacle detection, RL for path planning for medical manipulators. SSM distillation (ICML 2024 workshop paper), self-refinement for LLM toxicity detection (NAACL 2024 workshop paper), LLMs for misinformation detection (SMASH 2025).'
+    description: 'Multi-drone obstacle detection, RL for path planning for medical manipulators. SSM distillation (ICML 2024 workshop paper), self-refinement for LLM toxicity detection (NAACL 2024 workshop paper), LLMs for misinformation detection (SMASH 2025).',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/2/29/McGill_University_CoA.svg',
   },
   {
     company: 'Groq',
@@ -101,7 +104,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2025',
     link: 'https://groq.com',
     id: 'work2',
-    description: 'Evaluation infrastructure. CI/CD, reproduced coding evals, and contributed to early releases for OpenBench.'
+    description: 'Evaluation infrastructure. CI/CD, reproduced coding evals, and contributed to early releases for OpenBench.',
+    logo: 'https://www.google.com/s2/favicons?domain=groq.com&sz=128',
   },
   {
     company: 'MDA Space',
@@ -110,7 +114,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2024',
     link: 'https://mda.space',
     id: 'work3',
-    description: 'Control system optimization for the Candarm 3 in simulation, and 10x speedup for the visual similarity algorithm for Canadarm 2 debris detection.'
+    description: 'Control system optimization for the Candarm 3 in simulation, and 10x speedup for the visual similarity algorithm for Canadarm 2 debris detection.',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/3/30/MDA_Ltd._Logo.svg',
   },
   {
     company: "ACSL Ltd",
@@ -119,7 +124,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2022",
     link: "https://www.acsl.co.jp/en/",
     id: "work4",
-    description: 'Neural nets for drone motor performance modeling at Japan\'s largest industrial drone manufacturer.'
+    description: 'Neural nets for drone motor performance modeling at Japan\'s largest industrial drone manufacturer.',
+    logo: 'https://www.google.com/s2/favicons?domain=acsl.co.jp&sz=128',
   },
   {
     company: "Perceive Now",
@@ -128,7 +134,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2023",
     link: "https://perceivenow.ai/",
     id: "work5",
-    description: 'Developed v1 of the core API, contributed to the startup raising a 6-figure round with an $8.5M valuation.'
+    description: 'Developed v1 of the core API, contributed to the startup raising a 6-figure round with an $8.5M valuation.',
+    logo: 'https://www.google.com/s2/favicons?domain=perceivenow.ai&sz=128',
   },
   {
     company: "Soulzone",
@@ -137,7 +144,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2019",
     link: "#",
     id: "work6",
-    description: 'Joined a startup and worked on Backend & Apache Solr before starting CEGEP.' 
+    description: 'Joined a startup and worked on Backend & Apache Solr before starting CEGEP.',
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEYAJKRZZqepA/company-logo_200_200/company-logo_200_200/0/1631310969775?e=1779926400&v=beta&t=oFqBIrQCV9bDLWtSRl9qlpOsDOx96TDSFyLOWbAhsmg',
   },
   {
     company: "Expedia",
@@ -146,7 +154,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2018",
     link: "https://www.expedia.com",
     id: "work7",
-    description: 'Full-stack app to estimate semantic similarity between web pages. '
+    description: 'Full-stack app to estimate semantic similarity between web pages. ',
+    logo: 'https://www.google.com/s2/favicons?domain=expedia.com&sz=128',
   }
 ]
 

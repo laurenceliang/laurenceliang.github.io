@@ -189,7 +189,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <div
               className="relative overflow-hidden rounded-xl"
               onMouseMove={handleMouseMove}
@@ -201,10 +201,8 @@ export default function Personal() {
                   alt="Header"
                   className="w-full"
                 />
-                {/* Blur overlays - blur everything EXCEPT the hovered section */}
                 {hoveredSection !== null && (
                   <>
-                    {/* Blur section 0 if not hovered */}
                     {hoveredSection !== 0 && (
                       <div
                         className="pointer-events-none absolute inset-0 transition-all duration-500"
@@ -214,7 +212,6 @@ export default function Personal() {
                         }}
                       />
                     )}
-                    {/* Blur section 1 if not hovered */}
                     {hoveredSection !== 1 && (
                       <div
                         className="pointer-events-none absolute inset-0 transition-all duration-500"
@@ -224,7 +221,6 @@ export default function Personal() {
                         }}
                       />
                     )}
-                    {/* Blur section 2 if not hovered */}
                     {hoveredSection !== 2 && (
                       <div
                         className="pointer-events-none absolute inset-0 transition-all duration-500"
@@ -234,7 +230,6 @@ export default function Personal() {
                         }}
                       />
                     )}
-                    {/* Blur section 3 if not hovered */}
                     {hoveredSection !== 3 && (
                       <div
                         className="pointer-events-none absolute inset-0 transition-all duration-500"
@@ -248,7 +243,6 @@ export default function Personal() {
                 )}
               </div>
             </div>
-            {/* Caption below image */}
             <div className="h-6 px-1">
               {hoveredSection !== null && (
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 transition-opacity duration-500">
@@ -256,17 +250,27 @@ export default function Personal() {
                 </p>
               )}
             </div>
+          </div> */}
+          <div className="flex flex-col-reverse items-start gap-6 sm:flex-row sm:items-start sm:gap-8">
+            <p className="flex-1 text-zinc-600 dark:text-zinc-400">
+              Hi!
+              <br/><br/>
+              I'm currently building <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/>
+              and I'm working on <b>robotics research</b> with labs at McGill, Mila and UBC.
+              <br/><br/>
+              I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robot perception, and RL for robot learning.
+              <br/><br/>
+              Please feel free to reach out (contact details below), I'd love to connect!
+            </p>
+            <div className="flex flex-col items-center gap-1">
+              <img
+                src="/img/profile_stylized.png"
+                alt="Laurence Liang"
+                className="w-32 flex-shrink-0 rounded-2xl object-cover sm:w-40"
+              />
+              <p className="text-xs italic text-zinc-400 dark:text-zinc-500 text-center max-w-[8rem] sm:max-w-[10rem]">Watercolour style transfer using zero-shot prompting with GPT.</p>
+            </div>
           </div>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Hi!
-            <br/><br/>
-            I'm currently building <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/> 
-            and I'm working on <b>robotics research</b> with labs at McGill and UBC.
-            <br/><br/>
-            I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robot perception, and RL for robot learning. 
-            <br/><br/>
-            Please feel free to reach out (contact details below), I'd love to connect!
-          </p>
         </div>
       </motion.section>
 
@@ -327,13 +331,22 @@ export default function Personal() {
               />
               <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-row justify-between">
-                  <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {job.title}
-                    </h4>
-                    <p className="text-zinc-500 dark:text-zinc-400">
-                      {job.company}
-                    </p>
+                  <div className="flex items-center gap-3">
+                    {job.logo && (
+                      <img
+                        src={job.logo}
+                        alt={job.company}
+                        className="h-8 w-8 flex-shrink-0 rounded-md object-contain"
+                      />
+                    )}
+                    <div>
+                      <h4 className="font-normal dark:text-zinc-100">
+                        {job.title}
+                      </h4>
+                      <p className="text-zinc-500 dark:text-zinc-400">
+                        {job.company}
+                      </p>
+                    </div>
                   </div>
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {job.start} - {job.end}
