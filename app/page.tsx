@@ -268,7 +268,7 @@ export default function Personal() {
                 alt="Laurence Liang"
                 className="w-32 flex-shrink-0 rounded-2xl object-cover sm:w-40"
               />
-              <p className="text-xs italic text-zinc-400 dark:text-zinc-500 text-center max-w-[8rem] sm:max-w-[10rem]">Watercolour style transfer using zero-shot prompting with GPT.</p>
+              {/* <p className="text-xs italic text-zinc-400 dark:text-zinc-500 text-center max-w-[8rem] sm:max-w-[10rem]">Watercolour style transfer using zero-shot prompting with GPT.</p> */}
             </div>
           </div>
         </div>
