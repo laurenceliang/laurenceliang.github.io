@@ -178,6 +178,18 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'Open Questions: May 2026',
+    description: 'Domain Transforms and More',
+    link: '/blog/may_2026_questions',
+    uid: 'blog-6'
+  },
+  {
+    title: 'A Selection of Quotes',
+    description: 'Inspiration to look up to.',
+    link: '/blog/quotes',
+    uid: 'blog-5',
+  },
+  {
     title: 'Opinionated Rules for Research',
     description: 'Guiding principles to quickstart research projects.',
     link: '/blog/rules_for_research',

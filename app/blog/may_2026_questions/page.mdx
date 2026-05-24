@@ -1,0 +1,44 @@
+---
+title: "Open Questions: May 2026"
+date: 2026-05-24
+tags: essays
+author: Laurence Liang
+---
+
+![Questions](https://live.staticflickr.com/2779/4540129757_be2e323427_b.jpg)
+
+Here's a list of questions that I would love to learn more about. If anyone has any insight or recommendations on how to approach them,
+I'd love to meet up and learn more!
+
+- **What mathematical properties make the Laplace domain so useful?** Throughout my undergraduate studies, the Laplace domain has been shown to be 
+  useful in solving differential equations and in evaluating the response of a system subject to different inputs. In many cases, when problems are 
+  difficult to solve in the time domain, the Laplace domain serves as a more effective alternative to solve these problems. In class, we saw that 
+  a Laplace transform can convert a mathematical expression from the time domain to the Laplace domain (which I will henceforth refer to as the s-domain),
+  and an inverse Laplace transform that enables $s \rightarrow t$.
+  - What is a concise definition of s? (Sure, I understand that s is an abstraction of the "quantity of osctillations at a given s", though I still don't understand a
+    precise enough definition.)
+  - What mathematical properties make the s-domain interesting?
+  - Are there domains other than t- and s- that are interesting to study?
+
+- **How is the Fourier transform derived?** I understand that the frequency domain is related to the s-domain simply by substituting $s=j\omega$.
+  However, what is the intuition that leads us to state that this substitution results in the frequency domain? Furthermore, how can I visually and/or intuitively
+  understand how the Fourier transform works? How is the "original" Fourier transform different from the Fast Fourier Trasform (FFT) and Discrete Fourier Transform (DFT)?
+
+- **Where do singular values come from?** Singular Value Decomposition! At the surface level, the singular values come from the $\Sigma$ matrix when doing matrix decomposition of
+  $A=U\Sigma V$. However, what is the origin of these singular values? Are they some higher dimensional object whose projection is the initial $A$ matrix that we see on paper? 
+
+- **Why are singular values so effective at solving problems in optimization and system dynamics?** In control systems, we learned that the $H_\infty$ norm is useful at designing
+  controllers with respect to the worst case oscillations of a system, by taking the suprenum (analogous to the maximum) of the singular values of a system. Curiously, singular values 
+  are also essential for the Muon optimizer to enable fast convergence for neural network training. Why are singular values so useful in these two distinct domains? 
+
+- **How does diffusion work (i.e. the DDPM approach), and why do diffusion models work so well?** Earlier in undergrad, I got introduced to diffusion models for image generation, and also 
+  diffusion models for text generation and even for policies for robots. Why does diffusion work so well? Why hasn't the diffusion architecture replaced its attention-based counterparts?
+
+- **For red-black trees, why do a seemingly arbitrary set of rules guarantee self-balancing binary trees?** In my algorithms class, we learned that a set of rules involving node colouring 
+  and tree rotations guarantees that a binary search tree will always be approximately self-balancing. How did we arrive to this proof? Why does a seemingly arbitrary set of rules arrive 
+  to such a guarantee? At a higher level, why can arbitrary rules lead to strong and desirable guarantees?
+
+- **How many different ways can you play a guitar chord?** I previously played mostly open chords and barre chords, though recently I've been trying to learn more ways to play different chords. 
+  What are common ways to play chords beyond the basics? How many chord positions should one learn (and know) in order to be proficient at playing guitar?
+
+Thanks for reading! If anyone has any recommendations on how to approach these, no matter how simple the answers may actually be, I'd love to <a href="mailto:laurence.liang@mail.mcgill.ca">get in touch</a>!
