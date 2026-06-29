@@ -162,7 +162,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: "#",
     id: "work6",
     description: 'Joined a startup and worked on Backend & Apache Solr before starting CEGEP.',
-    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEYAJKRZZqepA/company-logo_200_200/company-logo_200_200/0/1631310969775?e=1779926400&v=beta&t=oFqBIrQCV9bDLWtSRl9qlpOsDOx96TDSFyLOWbAhsmg',
+    logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQEYAJKRZZqepA/company-logo_200_200/company-logo_200_200/0/1631310969775?e=1784160000&v=beta&t=GpmytLcEko-ZSpNKP6JloWNcfPOu8cC5UrFulcI8-Ms',
   },
   {
     company: "Expedia",
