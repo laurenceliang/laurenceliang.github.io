@@ -255,10 +255,10 @@ export default function Personal() {
             <p className="flex-1 text-zinc-600 dark:text-zinc-400">
               Hi!
               <br/><br/>
-              I'm currently building <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/>
-              and I'm working on <b>robotics research</b> with labs at McGill, Mila and UBC.
+              I'm currently working as an applied AI engineer at Mistral AI.
               <br/><br/>
-              I'm actively looking for research collaborations with industry and academia. My current research projects include LLM benchmarking for code generation, robot perception, and RL for robot learning.
+              During my university years, I built <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/>
+              and worked on <b>robotics research</b> with labs at McGill, Mila and UBC. 
               <br/><br/>
               Please feel free to reach out (contact details below), I'd love to connect!
             </p>
