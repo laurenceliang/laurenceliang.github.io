@@ -255,12 +255,15 @@ export default function Personal() {
             <p className="flex-1 text-zinc-600 dark:text-zinc-400">
               Hi!
               <br/><br/>
-              I'm currently working as an applied AI engineer at Mistral AI.
+              I'm currently working on use cases for AI models as part of Mistral AI.
               <br/><br/>
-              During my university years, I built <b>coding evals for agents</b> at the <a href="https://rootly.ai"><span className="font-bold">Rootly (YC S21) AI Labs</span></a>, <br/>
-              and worked on <b>robotics research</b> with labs at McGill, Mila and UBC. 
+              During my university years, I built coding evals for agents at the <a href="https://rootly.ai"><span className=""><u>Rootly (YC S21) AI Labs</u></span></a>, and worked on robotics research with labs at McGill, Mila and UBC; among other things! 
               <br/><br/>
-              Please feel free to reach out (contact details below), I'd love to connect!
+              I've been lucky to have helped run multiple hackathons throughout the years (including the <a href="https://meethackos.vercel.app"><u>HackOS</u></a> open research series since 2024), and helped co-host meetups for the <a href="https://mmlrg.github.io"><u>McGill machine learning reading group</u></a> from 2024 to 2026.
+              <br/><br/>
+              I also have some photography and music projects that I hope to launch soon.
+              <br/><br/>
+              Even though I can sometimes be a bit slow with communications, I always love to meet people from around the world, and to learn about new ideas and views. Please feel free <a href="mailto:laurence.liang@mail.mcgill.ca"><u>to reach out</u></a>, I'd love to connect!
             </p>
             <div className="flex flex-col items-center gap-1 sm:pt-5">
               <img
