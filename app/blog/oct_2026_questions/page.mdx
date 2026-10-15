@@ -1,0 +1,63 @@
+---
+title: "Open Questions: October 2026"
+date: 2026-10-01
+tags: essays
+author: Laurence Liang
+---
+
+![Questions](https://upload.wikimedia.org/wikipedia/commons/0/03/Monet_w806.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled)
+
+*Cliff at Grainval* (1882) by Claude Monet. 
+
+- **Is it coincidence that looped transformers and diffusion models both show promise?** From my point of view, looped transformers and 
+  diffusion models both involve at least two forward passses of the inputs through the model weights. (Technically a "forward pass"
+  in the reverse process for diffusion models, to be precise.) Is the common architectural choice, iterative forward passes, a key component
+  to more capable and efficient learning architectures? What would other representations of more efficient and capable models look like?
+
+- **How can a model make adquate predictions on out-of-distribution inputs?** If a model is given inputs that it has never seen before 
+  (out of distribution), how will the model behave? What are the guarantees? How does this relate to ["emergent abilities"](https://arxiv.org/abs/2206.07682)?
+  Are emergent abilities only a result of model size (so any sufficiently large model will exhibit signs of OOD generalization),
+  or are emergent abilities still dependent on traces of 'said' capability in the initial data mix?
+
+- **What are creative photography techniques?** Currently interested in shutter drag, tri-chromatic compositing, frame composition, double 
+  exposures (or more), push-/pull-development, 'winging it' in manual mode (next step), flash photography (lead/lag flash), 
+  night photography only using ambient light, prisms, and photography with a high f-stop. If anyone has any further suggestions on how to 
+  be creative with photography, would love to learn more!
+
+- **What are the true capabilities of a model?** Inspired by the [s1](https://arxiv.org/abs/2501.19393) paper and other related work, 
+  I find it super interesting that one could "augment" the capabilities of a model beyond conventional scaling laws (compute, data, params).
+  In the case of s1, the model simply had longer "thinking" traces, though there's also other work that demonstrated that activation steering
+  can also affect (and in some cases slightly improve) model capabilities. Thus, what is the true extent of model capabilities, and how 
+  can model capabilities be augmented and safeguarded beyond conventional scaling laws? 
+
+- **Why is sphere packing so sought after in math/CS research?** I also found out that sphere packing can have some interesting practical 
+  applications, so quite curious to learn more about the initial motivation on why the math/CS community has been interested in sphere packing 
+  and its subsequent applications.
+
+- **How do Kalman Filter varieties work? (At the equation level)** This is something that always bugged me in undergrad. I understand that 
+  it comes down to two equations, an internal ("physics") model and a statistical ("observation") model, and then the state estimate is
+  maximized using a max-likelihood method. However, how does it all connect at the equation (variable-) level? Also, how does one derive 
+  a state-model of an IMU? Intuitively it shouldn't be too hard (assuming only acceleration as observations in xyz and rpy combined with a 
+  gravity projection vector), though what is the ground truth of a correct state IMU model? During undergrad, it was hard to find a definite 
+  IMU reference, and this is something that seemed out of grasp. 
+
+- **How does SLAM work? (At the equation level)** I understand the intuition of SLAM (Simultaneous Location and Mapping). Given a robot that is inserted in an unknown environment,
+  the robot must simultaneously create a map of its environment and also determine its location. I also understand that the "trick" to solve
+  SLAM is loop closure, where the robot must return to it's origin which enables all the observations to be "stretched" along a closed loop.
+  What I struggle with is understanding, how does the math work at the equation level which enables SLAM?
+
+- **How can you build a graphics driver (i.e. Vulkan) from scratch?** It turns out graphic card compability (or lack of) is a pretty big 
+  challenge in robotics (in my experience when working on university research projects). Of course there is also dependency management 
+  challenge that gets tied into setting up simulation envs, though I consider dependency management a solvable problem assuming that 
+  conventional pacakging tools (i.e. Conda, uv, or others) are used. It's graphics driver compability that really seems to be a challenge to me. 
+
+- **What is the equivalency between attention and SSMs?** This is something that I have been introduced to during a research project during 
+  undergrad where a team of students and I looked into cross-architectural distillation from an attention model to a SSM. However, the 
+  exact derivation of the SSM lineage and its equivalency to attnetion at the variable/equation level still remains elusive. 
+
+- **Why does GRPO work?** A couple of friends introduced me to GRPO and how the reward signal is calculated relative to a 'sample' of 
+  predictions as opposed to an absolute score. However, not fully understanding why GRPO works (and even aspects of the "how") still bugs me 
+  a bit, and I feel like fully understanding GRPO at the equation level (and related methods, going as far back as PPO/Q-Learning) will 
+  clarify a lot more. 
+
+Thanks for reading! If you might happen to have any suggestions or recommendations, I'd love to get in touch!

@@ -188,6 +188,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    title: 'Open Questions: October 2026',
+    description: 'Things that have been wondering about.',
+    link: '/blog/oct_2026_questions',
+    uid: 'blog-7'
+  },
+  {
     title: 'Open Questions: May 2026',
     description: 'Domain transforms and more',
     link: '/blog/may_2026_questions',
